@@ -1,0 +1,101 @@
+%%%% Начало оформления заголовка - оставить без изменений !!! %%%%
+\input{my_folder/task_settings}	% настройки - начало 
+
+{%\normalfont %2020
+	\MakeUppercase{\SPbPU}}\\
+\institute
+
+\par}\intervalS% завершает input
+
+\noindent
+\begin{minipage}{\linewidth}
+\vspace{\mfloatsep} % интервал 	
+\begin{tabularx}{\linewidth}{Xl}
+	&УТВЕРЖДАЮ      \\
+	&\HeadTitle     \\			
+	&\underline{\hspace*{0.1\textheight}} \Head     \\
+	&<<\underline{\hspace*{0.05\textheight}}>> \underline{\hspace*{0.1\textheight}} \thesisYear г.  \\  
+\end{tabularx}
+\vspace{\mfloatsep} % интервал 	
+\end{minipage}
+
+\intervalS{\centering\bfseries%
+
+ЗАДАНИЕ\\
+на выполнение %с 2020 года 
+%по выполнению % до 2020 года
+выпускной квалификационной работы
+
+
+\intervalS\normalfont%
+
+студенту \uline{\AuthorFullDat{} гр.~\group}
+
+
+\par}\intervalS%
+%%%%
+%%%% Конец оформления заголовка  %%%%
+
+
+
+\begin{enumerate}[1.]
+\item Тема работы: {\expandafter \thesisTitle.}
+%\item Тема работы (на английском языке): \uline{\thesisTitleEn.} % вероятно после 2021 года
+\item Срок сдачи студентом законченной работы: \uline{\thesisDeadline.} 
+\item Исходные данные по работе: \begin{enumerate}[label=\theenumi\arabic*.]
+	\item An experience in automatically extracting CAPAs from code repositories: [Электронный ресурс]. URL: \url{https://arxiv.org/pdf/2212.09910} (дата обращения: 12.12.2024).
+	\item A meta-analytical comparison of Naive Bayes and Random Forest for software defect prediction: [Электронный ресурс]. URL: \url{https://www.researchgate.net/publication/350459831_A_metaanalytical_comparison_of_Naive_Bayes_and_Random_Forest_for_software_defect_prediction} (дата обращения: 12.12.2024).
+	\item Examining the Success of an Open Source Software Project Analysing Its Repository: [Электронный ресурс]. URL: \url{https://doi.org/10.5281/zenodo.10046579} (дата обращения: 12.12.2024).
+	\item Github API documentation: [Электронный ресурс]. URL: \url{https://docs.github.com/en/rest?apiVersion=2022-11-28} (дата обращения: 12.12.2024).
+	\item PyGithub documentation: [Электронный ресурс]. URL: \url{https://pygithub.readthedocs.io/en/stable/} (дата обращения: 12.12.2024).
+	\item The k-means Algorithm: A Comprehensive Survey and Performance Evaluation: [Электронный ресурс]. URL: \url{https://www.mdpi.com/2079-9292/9/8/1295} (дата обращения: 12.12.2024).
+\end{enumerate}
+%}%
+\printbibliographyTask % печать списка источников % КОММЕНТИРУЕМ ЕСЛИ НЕ ИСПОЛЬЗУЕТСЯ
+% В СЛУЧАЕ, ЕСЛИ НЕ ИСПОЛЬЗУЕТСЯ МОЖНО ТАКЖЕ ЗАЙТИ В setup.tex и закомментировать \vspace{-0.28\curtextsize}
+\item Содержание работы (перечень подлежащих разработке вопросов):
+\begin{enumerate}[label=\theenumi\arabic*.]
+\item Обзор литературы по теме ВКР.
+\item Исследование программных продуктов в сфере анализа качества репозиториев кода.
+\item Изучение и сравнительный анализ средств извлечения предупреждающих действий.
+\item Разработка способа корректного извлечения метрик из репозиториев кода.
+\item Разработка метода обработки и анализа данных на основе изученных средств.
+\item Создание решения автоматического выделения предупреждающих действий на основе обработанных данных.
+\item Добавление веб инетрфейса с визуализацией выявленных аномалий.
+\item Тестирование разработанного программного решения. 
+\end{enumerate}
+\item Перечень графического материала (с указанием обязательных чертежей): 
+\begin{enumerate}[label=\theenumi\arabic*.]
+\item Диаграмма вариантов использования.
+\item Архитектура разработанной программы.
+\end{enumerate}	
+\item Консультанты по работе:
+\begin{enumerate}[label=\theenumi\arabic*.] 
+\item {\emakefirstuc{\ConsultantNormDegree}, \ConsultantNorm{} (нормоконтроль).} %	Обязателен для всех студентов
+\end{enumerate}
+\item Дата выдачи задания: {\thesisStartDate.}
+\end{enumerate}
+
+\intervalS%можно удалить пробел
+
+Руководитель ВКР {\hspace*{0.1\textheight} \Supervisor}
+
+
+\intervalS%можно удалить пробел
+
+Консультант  {\hspace*{0.1\textheight}\ConsultantExtra}
+
+
+\intervalS%можно удалить пробел
+
+%Консультант по нормоконтролю \uline{\hspace*{0.1\textheight} \ConsultantNorm}%ПОКА НЕ ТРЕБУЕТСЯ, Т.К. ОН У ВСЕХ ПО УМОЛЧАНИЮ
+
+Задание принял к исполнению {\thesisStartDate}
+
+\intervalS%можно удалить пробел
+
+Студент {\hspace*{0.1\textheight}  \Author}
+
+
+
+%\input{my_folder/task_settings_restore}	% настройки - конец

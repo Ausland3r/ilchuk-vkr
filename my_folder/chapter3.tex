@@ -1,0 +1,181 @@
+\chapter{Разработка программного обеспечения} \label{ch3}
+
+\section{Анализ данных из репозитория} \label{ch3:sec1}
+
+Для анализа данных использовался репозиторий на GitHub. Данные включали историю коммитов, информацию об авторах, количество добавленных и удалённых строк кода, изменения в файлах и временные интервалы между коммитами. На основе этих данных разработана система автоматического извлечения информации, её анализа и формирования рекомендаций по корректирующим и предупреждающим действиям (CAPA).
+
+\begin{lstlisting}[language=Python]
+# Чтение конфигурации из файла
+config = {}
+with open('config.txt', 'r') as file:
+for line in file:
+name, value = line.strip().split('=')
+config[name] = value
+
+access_token = config['access_token']
+repos = config['repos'].split(',')
+
+# Аутентификация с использованием токена доступа
+g = Github(access_token)
+
+# Создание файла для записи данных
+with open('repository_data.csv', mode='w', newline='', encoding='utf-8') as file:
+writer = csv.writer(file)
+writer.writerow(['Repo', 'Commit SHA', 'Author', 'Date', 'Message', 'Additions', 'Deletions', 'Total Changes', 'File Changes', 'Time Since Last Commit', 'Has CAPA'])
+
+for repo_name in repos:
+repo = g.get_repo(repo_name)
+commits = repo.get_commits()
+
+previous_commit_date = None
+for commit in commits:
+sha = commit.sha
+author = commit.commit.author.name
+date = commit.commit.author.date
+message = commit.commit.message
+stats = commit.stats
+additions = stats.additions
+deletions = stats.deletions
+total_changes = stats.total
+files_changed = commit.files
+
+if previous_commit_date:
+time_since_last_commit = abs((date - previous_commit_date).days)
+else:
+time_since_last_commit = 0
+
+previous_commit_date = date
+has_capa = 0  # Изначально все коммиты не CAPA
+writer.writerow([repo_name, sha, author, date, message, additions, deletions, total_changes, len(files_changed), time_since_last_commit, has_capa])
+
+print("Данные успешно сохранены в repository_data.csv")
+\end{lstlisting}
+
+
+\section{Методы обработки данных и обучение моделей} \label{ch3:sec2}
+
+Система реализована на языке Python и включает следующие этапы:
+\begin{itemize}
+	\item Извлечение данных о коммитах из репозитория GitHub.
+	\item Запись данных в CSV-файл для последующего анализа.
+	\item Обработка данных и определение пороговых значений с использованием алгоритма кластеризации KMeans.
+	\item Обучение модели для определения CAPA с использованием алгоритмов машинного обучения (случайный лес и наивный байесовский классификатор).
+	\item Генерация рекомендаций CAPA на основе анализа данных.
+	\item Запись рекомендаций в файл и автоматическое создание pull request на GitHub.
+	\item Визуализация данных с использованием интерактивного дашборда на основе библиотеки Dash.
+\end{itemize}
+
+Для выявления аномалий использовался метод кластеризации KMeans, который позволил установить пороговые значения на основе характеристик коммитов (количество добавленных и удалённых строк, изменения в файлах, временные интервалы между коммитами и другие параметры). 
+
+Далее проводилось обучение моделей машинного обучения, включая случайный лес и наивный байесовский классификатор. Экспериментальные результаты показали, что случайный лес обеспечил более высокую точность классификации (1.0), по сравнению с наивным байесовским классификатором (0.8), что связано с возможными сложными зависимостями между признаками и наличием выбросов в данных.
+
+\begin{lstlisting}[language=Python]
+# Загрузка данных из файла
+data = pd.read_csv('repository_data.csv', encoding='utf-8')
+
+# Использование KMeans для определения пороговых значений
+features = ['Additions', 'Deletions', 'Total Changes', 'File Changes', 'Time Since Last Commit']
+kmeans = KMeans(n_clusters=2, random_state=42)
+data['Cluster'] = kmeans.fit_predict(data[features])
+
+# Вычисление пороговых значений на основе кластеров
+cluster_centers = kmeans.cluster_centers_
+ADDITION_THRESHOLD = cluster_centers[:, 0].mean()
+DELETION_THRESHOLD = cluster_centers[:, 1].mean()
+TOTAL_CHANGE_THRESHOLD = cluster_centers[:, 2].mean()
+FILE_CHANGE_THRESHOLD = cluster_centers[:, 3].mean()
+TIME_SINCE_LAST_COMMIT_THRESHOLD = cluster_centers[:, 4].mean()
+\end{lstlisting}
+
+\section{Интеграция модели глубокого леса} \label{ch3:sec3}
+
+Для дальнейшего улучшения точности была внедрена модель глубокого леса (Deep Forest). Так как библиотека deep-forest несовместима с Python 3.12, была создана виртуальная среда на Python 3.9 для выполнения модели. Основная программа вызывала исполняемый файл в этой среде, передавала данные из репозитория и получала обработанные результаты.
+
+Глубокий лес был обучен на тех же данных, что и предыдущие модели, но позволил более точно выявлять сложные зависимости между параметрами коммитов. Итоговые предсказания загружались обратно в основной процесс для последующего анализа.
+\begin{lstlisting}[language=Python]
+# Сохранение важностей признаков в CSV
+importance_df = pd.DataFrame({'Feature': features, 'Importance': rf_model.feature_importances_})
+importance_df.to_csv('feature_importances.csv', index=False)
+
+input_csv = 'repository_data.csv'
+output_csv = 'repository_data_with_predictions.csv'
+python_venv = os.path.join(os.getcwd(), 'myenv', 'Scripts', 'python.exe')
+if not os.path.exists(python_venv):
+print(f"Virtual environment not found at {python_venv}")
+sys.exit(1)
+
+result = subprocess.run([python_venv, 'deep_forest_task.py', input_csv, output_csv], capture_output=True, text=True)
+print(result.stdout)
+print(result.stderr, file=sys.stderr)
+
+if result.returncode == 0:
+data_with_predictions = pd.read_csv(output_csv)
+print("Результаты предсказаний загружены успешно.")
+else:
+print("Ошибка при выполнении подзадачи.")
+\end{lstlisting}
+
+
+\section{Генерация рекомендаций CAPA} \label{ch3:sec4}
+
+На основе адаптивных пороговых значений для каждого коммита формировались рекомендации CAPA. Если одна из метрик превышала вычисленные пороговые значения, создавалась рекомендация, которая добавлялась в итоговый список. 
+
+Пример рекомендаций:
+\begin{itemize}
+	\item Если количество добавленных строк превышает порог, рекомендуется провести ревизию кода.
+	\item Если количество удалённых строк значительно увеличилось, это может указывать на устранение проблем или рефакторинг кода.
+	\item Если временной интервал между коммитами велик, это может свидетельствовать о задержке в разработке, требующей пересмотра приоритетов.
+\end{itemize}
+
+\begin{lstlisting}[language=Python]
+# Функция генерации рекомендаций CAPA
+def generate_capa_recommendations(data, ADDITION_THRESHOLD, DELETION_THRESHOLD, TOTAL_CHANGE_THRESHOLD, FILE_CHANGE_THRESHOLD, TIME_SINCE_LAST_COMMIT_THRESHOLD):
+recommendations = []
+for index, commit_data in data.iterrows():
+suggestion = []
+if commit_data['Additions'] > ADDITION_THRESHOLD:
+suggestion.append(' | Review large additions |')
+if commit_data['Deletions'] > DELETION_THRESHOLD:
+suggestion.append(' | Review large deletions (Many deletions may indicate a fix) |')
+if commit_data['Total Changes'] > TOTAL_CHANGE_THRESHOLD:
+suggestion.append(' | Review total changes for potential issues (Too many changes since last commit) |')
+if commit_data['File Changes'] > FILE_CHANGE_THRESHOLD:
+suggestion.append(' | Review changes in multiple files (Many files updated, expected compatibility issues) |')
+if abs(commit_data['Time Since Last Commit']) > abs(TIME_SINCE_LAST_COMMIT_THRESHOLD):
+suggestion.append('| Review large time gap between commits (Large time gap between commits may indicate a slow development process) |')
+if len(commit_data['Message']) < 15 and commit_data['Total Changes'] > TOTAL_CHANGE_THRESHOLD:
+suggestion.append('| Commit message is too short, consider providing more details |')
+if not suggestion:
+suggestion.append('No specific recommendations')
+
+recommendations.append({
+	'Repo': commit_data['Repo'],
+	'Commit SHA': commit_data['Commit SHA'],
+	'Message': commit_data['Message'],
+	'Suggestion': '; '.join(suggestion)
+})
+
+return recommendations
+
+# Выявление аномалий и генерация рекомендаций
+recommendations = generate_capa_recommendations(data_with_predictions, ADDITION_THRESHOLD, DELETION_THRESHOLD, TOTAL_CHANGE_THRESHOLD, FILE_CHANGE_THRESHOLD, TIME_SINCE_LAST_COMMIT_THRESHOLD)
+recommendations_df = pd.DataFrame(recommendations)
+\end{lstlisting}
+
+\section{Разработка интерактивного дашборда} \label{ch3:sec5}
+
+Для визуализации результатов анализа был разработан дашборд на основе библиотеки Dash. Дашборд содержит:
+\begin{itemize}
+	\item Графики активности разработчиков.
+	\item Динамику изменений кода.
+	\item Выявленные аномалии и рекомендации CAPA.
+	\item Историю коммитов с классификацией по типам изменений.
+\end{itemize}
+
+Это позволило наглядно представлять анализируемые данные и упрощать процесс принятия решений по улучшению качества кода.
+
+\section{Выводы} \label{ch3:conclusion}
+
+В данной главе рассмотрена реализация системы автоматического анализа коммитов. Использование методов машинного обучения и кластеризации позволило выявлять аномалии в процессе разработки и формировать рекомендации по корректирующим действиям. 
+
+Интеграция модели глубокого леса позволила повысить точность классификации, а интерактивный дашборд упростил процесс мониторинга состояния репозитория. Таким образом, предложенная система способствует повышению качества кода и автоматизации процесса контроля за разработкой программного обеспечения.
