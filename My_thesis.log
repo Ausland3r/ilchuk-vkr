@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  28 FEB 2025 17:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  30 APR 2025 00:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3687,7 +3687,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 
 ] (./My_thesis.toc
 Package cleveref Info: loaded `russian' language definitions on input line 2.
-
+)
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3698,7 +3698,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 Class memoir Warning: The material used in the footer is too large
 (12.64719pt) for the given foot skip (0.0pt), it is recommended to
 either increase the foot skip or redesign the footer
-(in both cases you will find help in the memoir manual). on input line 37.
+(in both cases you will find help in the memoir manual). on input line 19.
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3707,7 +3707,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 
 [4.4
 
-])
+]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3832,8 +3832,35 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 
 [13.13]
 
-Package nag Warning: figure with no \caption on input line 47.
 
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[14.14{c:/texlive/2024/texmf-dist/fonts/enc/dvips/tempora/tmp_q3dzgc.enc}])
+(./my_folder/chapter3.tex
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[15.15]
+<my_folder/images/architect.png, id=231, 2055.68pt x 217.81375pt>
+File: my_folder/images/architect.png Graphic file (type png)
+<use my_folder/images/architect.png>
+Package pdftex.def Info: my_folder/images/architect.png  used on input line 9.
+(pdftex.def)             Requested size: 483.69687pt x 51.24937pt.
 
 
 
@@ -3846,44 +3873,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[14.14{c:/texlive/2024/texmf-dist/fonts/enc/dvips/tempora/tmp_q3dzgc.enc}]
-
-Package nag Warning: figure with no \caption on input line 78.
-
-) (./my_folder/chapter3.tex
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[15.15] (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: T2A).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 10.
-
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[16.16{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
+[16.16 <./my_folder/images/architect.png (PNG copy)>]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3896,6 +3886,11 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [17.17]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T2A).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3907,7 +3902,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[18.18]
+[18.18{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3931,7 +3926,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[20.20]) (./my_folder/chapter4.tex
+[20.20]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3943,7 +3938,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[21.21]) (./my_folder/conclusion.tex
+[21.21]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3956,6 +3951,19 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [22.22]
+Underfull \hbox (badness 5288) in paragraph at lines 76--77
+[]\T2A/Tempora-TLF/b/n/14.05249 (+20) Адаптивность ин^^?тер^^?фей^^?са: \T2A/Te
+mpora-TLF/m/n/14.05249 (+20) При со^^?зда^^?нии при^^?ло^^?же^^?ния ис^^?поль^^
+?зо^^?ва^^?
+ []
+
+
+Underfull \hbox (badness 5954) in paragraph at lines 76--77
+\T2A/Tempora-TLF/m/n/14.05249 (+20) но^^?сти, при ини^^?ци^^?а^^?ли^^?за^^?ции 
+при^^?ло^^?же^^?ния под^^?клю^^?че^^?на те^^?ма Bootstrap
+ []
+
+
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3967,7 +3975,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[23.23]) (./my_folder/acronyms.tex) (./my_folder/dictionary.tex
+[23.23]) (./my_folder/chapter4.tex
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3979,7 +3987,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[24.24]) (./my_folder/references.tex
+[24.24])
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3991,7 +3999,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[25.25]
+[25.25] (./my_folder/conclusion.tex
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4004,6 +4012,54 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [26.26]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[27.27]) (./my_folder/acronyms.tex) (./my_folder/dictionary.tex
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[28.28]) (./my_folder/references.tex
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[29.29]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[30.30]
 bibitemlist
 
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
@@ -4023,7 +4079,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[27.27])
+[31.31])
 
 Package xassoccnt Warning: Warning: An accidental(?) addition of associated
 (xassoccnt)                counter(s) without DeclareAssociatedCounters was
@@ -4044,7 +4100,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[28.28] (./my_folder/appendix1.tex) (./my_folder/appendix2.tex)
+[32.32] (./my_folder/appendix1.tex) (./my_folder/appendix2.tex)
 
 Class memoir Warning: The material used in the footer is too large
 (12.64719pt) for the given foot skip (0.0pt), it is recommended to
@@ -4060,8 +4116,10 @@ Package caption Warning: Unused \captionsetup[ListingEnv] on input line 238.
 See the caption package documentation for explanation.
 
 
-Package nag Warning: 2 complaints in total.
+Package caption Warning: Unused \captionsetup[lstlisting] on input line 245.
+See the caption package documentation for explanation.
 
+No complaints by nag.
 \tf@toc=\write9
 \openout9 = `My_thesis.toc'.
 
@@ -4072,42 +4130,33 @@ Package cleveref Info: loaded `russian' language definitions on input line 13.
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `My_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 6CA35799DC090898F3B40A68054BEBAD;2430.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                My_thesis
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: EA958BFB912836675837ECAFD92E433C;2430.
 Package logreq Info: Writing requests to 'My_thesis.run.xml'.
 \openout1 = `My_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48675 strings out of 473330
- 845076 string characters out of 5723877
- 2249027 words of memory out of 5000000
- 70462 multiletter control sequences out of 15000+600000
- 663126 words of font info for 249 fonts, out of 8000000 for 9000
+ 47983 strings out of 473330
+ 837817 string characters out of 5723877
+ 2000153 words of memory out of 5000000
+ 69894 multiletter control sequences out of 15000+600000
+ 663429 words of font info for 249 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,123p,1565b,3221s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,123p,3236b,3221s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><c:/texlive/
 2024/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb><c:/texlive/2024/te
 xmf-dist/fonts/type1/public/tempora/Tempora-BoldItalic.pfb><c:/texlive/2024/tex
 mf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb><c:/texlive/2024/texmf-di
 st/fonts/type1/public/tempora/Tempora-Regular.pfb><c:/texlive/2024/texmf-dist/f
 onts/type1/public/amsfonts/euler/eurm10.pfb><c:/texlive/2024/texmf-dist/fonts/t
-ype1/public/cm-super/sfit1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/publi
-c/cm-super/sftt1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/newtx/tx
-miaX.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on My_thesis.pdf (28 pages, 289977 bytes).
+ype1/public/cm-super/sftt1440.pfb><c:/texlive/2024/texmf-dist/fonts/type1/publi
+c/newtx/txmiaX.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/newtx/txsys.p
+fb>
+Output written on My_thesis.pdf (32 pages, 353527 bytes).
 PDF statistics:
- 545 PDF objects out of 1000 (max. 8388607)
- 491 compressed objects within 5 object streams
- 244 named destinations out of 1000 (max. 500000)
- 50265 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 405 PDF objects out of 1000 (max. 8388607)
+ 348 compressed objects within 4 object streams
+ 123 named destinations out of 1000 (max. 500000)
+ 47710 words of extra memory for PDF output out of 51595 (max. 10000000)
 

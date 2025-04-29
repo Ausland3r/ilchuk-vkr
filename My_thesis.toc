@@ -14,26 +14,23 @@
 \contentsline {section}{\numberline {1.5}Формулирование цели, задач и гипотез}{12}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Выводы}{13}{section.1.6}%
 \contentsline {chapter}{\chapternumberline {2}Разработка метода, алгоритма, модели исследования}{13}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Обоснование выбора метода}{13}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Формализация задачи}{14}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Выбор алгоритмов анализа}{14}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Метод кластеризации KMeans}{14}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Обучение моделей машинного обучения}{14}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Глубокий лес (Deep Forest) для предсказания CAPA}{15}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Заключение}{15}{section.2.5}%
+\contentsline {section}{\numberline {2.1}Постановка задачи}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Кластерный анализ коммитов}{14}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Классификация коммитов методом глубокого леса}{15}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Заключение}{16}{section.2.4}%
 \contentsline {chapter}{\chapternumberline {3}Разработка программного обеспечения}{16}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Анализ данных из репозитория}{16}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Методы обработки данных и обучение моделей}{17}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Интеграция модели глубокого леса}{18}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Генерация рекомендаций CAPA}{19}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Разработка интерактивного дашборда}{20}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Выводы}{21}{section.3.6}%
-\contentsline {chapter}{\chapternumberline {4}Апробация результатов исследования}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Цель апробации}{21}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Методика тестирования}{21}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Практическое применение и апробация}{22}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Выводы}{22}{section.4.4}%
-\contentsline {chapter}{Заключение}{23}{chapter*.13}%
-\contentsline {chapter}{Словарь терминов}{25}{chapter*.14}%
-\contentsline {chapter}{Список использованных источников}{26}{chapter*.15}%
-\contentsline {chapter}{Библиографический список}{27}{chapter*.16}%
+\contentsline {section}{\numberline {3.1}Проектирование архитектуры системы}{16}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Извлечение и обработка данных из GitHub}{18}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Интеграция модели глубокого леса}{20}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Реализация панели визуализации на фреймворке Dash}{22}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Интеграция компонентов в единую систему}{23}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Выводы}{24}{section.3.6}%
+\contentsline {chapter}{\chapternumberline {4}Апробация результатов исследования}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Цель апробации}{25}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Методика тестирования}{25}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Практическое применение и апробация}{25}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Выводы}{26}{section.4.4}%
+\contentsline {chapter}{Заключение}{27}{chapter*.12}%
+\contentsline {chapter}{Словарь терминов}{29}{chapter*.13}%
+\contentsline {chapter}{Список использованных источников}{30}{chapter*.14}%
+\contentsline {chapter}{Библиографический список}{31}{chapter*.15}%
