@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  11 FEB 2025 12:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  16 MAY 2025 14:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3560,11 +3560,15 @@ line 40.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+
+
+Package biblatex Warning: Option 'labelprefix' requires global
+(biblatex)                'defernumbers=true' on input line 20.
+
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
 (Font)              scaled to size 14.05249pt on input line 22.
-)
-(c:/texlive/2024/texmf-dist/tex/latex/tempora/OT1Tempora-TLF.fd)<<ot1.cmap>><<o
-ml.cmap>> (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd)
+) (c:/texlive/2024/texmf-dist/tex/latex/tempora/OT1Tempora-TLF.fd)<<ot1.cmap>><
+<oml.cmap>> (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd)
 (c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg)
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd)
 (c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg)
@@ -3572,10 +3576,12 @@ ml.cmap>> (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd)
 (c:/texlive/2024/texmf-dist/tex/latex/newtx/untxsym.fd)
 (c:/texlive/2024/texmf-dist/tex/latex/newtx/untxsyc.fd)
 (c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-eur.cfg)
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-\T2A/Tempora-TLF/m/n/14.05249 (+20) and _ Random _ Forest _ for _ software _ de
-fect _ prediction$[] (да^^?та об^^?ра^^?ще^^?ния:
- []
+
+Package biblatex Warning: Option 'resetnumbers' requires 'defernumbers=true'.
+(biblatex)                Ignoring 'resetnumbers=true' on input line 54.
+
+
+LaTeX Warning: Empty bibliography on input line 54.
 
 
 
@@ -3593,20 +3599,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/
-texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}]
-! Extra }, or forgotten \endgroup.
-l.53 }
-      %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-LaTeX Warning: Empty bibliography on input line 54.
-
-)
+texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}])
 
 Package caption Warning: Unused \captionsetup[figure] on input line 71.
 See the caption package documentation for explanation.
@@ -3647,35 +3640,26 @@ Package cleveref Info: loaded `russian' language definitions on input line 13.
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `My_task.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                My_task
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'My_task.run.xml'.
 \openout1 = `My_task.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47339 strings out of 473330
- 824642 string characters out of 5723877
- 1996538 words of memory out of 5000000
+ 47342 strings out of 473330
+ 824628 string characters out of 5723877
+ 1996543 words of memory out of 5000000
  69574 multiletter control sequences out of 15000+600000
- 606453 words of font info for 114 fonts, out of 8000000 for 9000
+ 606204 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,123p,1234b,3221s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb><c:/t
 exlive/2024/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb>
-Output written on My_task.pdf (2 pages, 67892 bytes).
+Output written on My_task.pdf (2 pages, 65543 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
- 27 named destinations out of 1000 (max. 500000)
+ 75 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
+ 32 named destinations out of 1000 (max. 500000)
  18449 words of extra memory for PDF output out of 20736 (max. 10000000)
 

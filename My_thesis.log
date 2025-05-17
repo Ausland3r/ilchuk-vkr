@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  30 APR 2025 00:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  17 MAY 2025 15:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3266,13 +3266,13 @@ LaTeX Font Info:    Font shape `T1/Tempora-TLF/m/n' will be
 <<t1.cmap>>
 (./My_thesis.aux
 LaTeX Font Info:    Trying to load font information for T2A+Tempora-TLF on inpu
-t line 13.
+t line 12.
 
 (c:/texlive/2024/texmf-dist/tex/latex/tempora/t2atempora-tlf.fd
 File: t2atempora-tlf.fd 2015/09/13 Font definitions for T2A/Tempora-TLF.
 )
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 14.05249pt on input line 13.
+(Font)              scaled to size 14.05249pt on input line 12.
 <<t2a.cmap>>
 \c@mypages@totc=\count737
 \c@TotPages@totc=\count738
@@ -3530,164 +3530,131 @@ line 34.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
 line 34.
  (./template_settings/common/renames.tex)
-(./my_folder/title.tex) (./my_folder/task.tex (./my_folder/task_settings.tex
+(./my_folder/title.tex) (./my_folder/contents.tex
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
-(Font)              scaled to size 14.05249pt on input line 22.
-)
-(c:/texlive/2024/texmf-dist/tex/latex/tempora/OT1Tempora-TLF.fd)<<ot1.cmap>><<o
-ml.cmap>> (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg)
-(c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd)
-(c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg)
-(c:/texlive/2024/texmf-dist/tex/latex/gelasiomath/untxmia.fd)
-(c:/texlive/2024/texmf-dist/tex/latex/newtx/untxsym.fd)
-(c:/texlive/2024/texmf-dist/tex/latex/newtx/untxsyc.fd)
-(c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-eur.cfg)
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-\T2A/Tempora-TLF/m/n/14.05249 (+20) and _ Random _ Forest _ for _ software _ de
-fect _ prediction$[] (да^^?та об^^?ра^^?ще^^?ния:
- []
-
-
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[1.1
-
-{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/
-texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}]
-
-LaTeX Warning: Empty bibliography on input line 54.
-
-) (./my_folder/summary.tex
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[2.2]
-\@c=\count753
-\@last=\count754
-\@pnul=\count755
-\@c=\count756
-\@last=\count757
-\@pnul=\count758
-\@c=\count759
-\@last=\count760
-\@pnul=\count761
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 10.25826pt on input line 29.
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 29.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 29.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 29.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 6.1pt on input line 29.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 10.95pt on input line 29.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.0pt on input line 29.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.1pt on input line 29.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.95pt on input line 29.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.0pt on input line 29.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.1pt on input line 29.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.95pt on input line 29.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 29.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.1pt on input line 29.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.95pt on input line 29.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.0pt on input line 29.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.1pt on input line 29.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.95pt on input line 29.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.0pt on input line 29.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.1pt on input line 29.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.95pt on input line 29.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.0pt on input line 29.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.1pt on input line 29.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.95pt on input line 29.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.0pt on input line 29.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.1pt on input line 29.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 29.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 29.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 6.1pt on input line 29.
-LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 10.95pt on input line 29.
-LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 8.0pt on input line 29.
-LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 6.1pt on input line 29.
-LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 10.95pt on input line 29.
-LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 8.0pt on input line 29.
-LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 6.1pt on input line 29.
-LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 10.95pt on input line 29.
-LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 8.0pt on input line 29.
-LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 6.1pt on input line 29.
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 29.
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 29.
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 29.
-) (./my_folder/contents.tex
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[3.3
-
-] (./My_thesis.toc
+(Font)              scaled to size 14.05249pt on input line 15.
+ (./My_thesis.toc
 Package cleveref Info: loaded `russian' language definitions on input line 2.
+LaTeX Font Info:    Calculating math sizes for size <14.05249> on input line 3.
+
+LaTeX Font Info:    Trying to load font information for OT1+Tempora-TLF on inpu
+t line 3.
+
+(c:/texlive/2024/texmf-dist/tex/latex/tempora/OT1Tempora-TLF.fd
+File: OT1Tempora-TLF.fd 2016/02/02 (autoinst) Font definitions for OT1/Tempora-
+TLF.
 )
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 14.05249pt on input line 3.
+<<ot1.cmap>>
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 10.25826pt on input line 3.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 7.72891pt on input line 3.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 14.05249pt on input line 3.
+<<oml.cmap>>
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 10.25826pt on input line 3.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 7.72891pt on input line 3.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 14.05249pt on input line 3.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 10.25826pt on input line 3.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 7.72891pt on input line 3.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 14.05249pt on input line 3.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 10.25826pt on input line 3.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 7.72891pt on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+ (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+
+(c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
+3.
+
+(c:/texlive/2024/texmf-dist/tex/latex/gelasiomath/untxmia.fd
+File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
+)
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 14.05249pt on input line 3.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 10.25826pt on input line 3.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 7.72891pt on input line 3.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
+3.
+
+(c:/texlive/2024/texmf-dist/tex/latex/newtx/untxsym.fd
+File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
+)
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 14.05249pt on input line 3.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 10.25826pt on input line 3.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 7.72891pt on input line 3.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
+3.
+
+(c:/texlive/2024/texmf-dist/tex/latex/newtx/untxsyc.fd
+File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
+)
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 14.05249pt on input line 3.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 10.25826pt on input line 3.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 7.72891pt on input line 3.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 14.05249pt on input line 3.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 10.25826pt on input line 3.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 7.72891pt on input line 3.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 14.05249pt on input line 3.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 10.25826pt on input line 3.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 7.72891pt on input line 3.
+LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
+(Font)              scaled to size 14.05249pt on input line 3.
+LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
+(Font)              scaled to size 10.25826pt on input line 3.
+LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
+(Font)              scaled to size 7.72891pt on input line 3.
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
+(Font)              scaled to size 14.05249pt on input line 3.
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
+(Font)              scaled to size 10.25826pt on input line 3.
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
+(Font)              scaled to size 7.72891pt on input line 3.
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
+(Font)              scaled to size 14.05249pt on input line 3.
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
+(Font)              scaled to size 10.25826pt on input line 3.
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
+(Font)              scaled to size 7.72891pt on input line 3.
+
+(c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-eur.cfg
+File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
+))
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3705,79 +3672,233 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
+[1.1{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2
+024/texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}
+
+
+])
+(./my_folder/introduction.tex
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[2.2
+
+]) (./my_folder/chapter1.tex
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[3.3]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
 [4.4
 
 ]
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[5.5]) (./my_folder/introduction.tex)
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[6.6
-
-] (./my_folder/chapter1.tex
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[7.7]
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[8.8
-
-]
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 30.
-
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[9.9]
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/it' will be
-(Font)              scaled to size 14.05249pt on input line 60.
+(Font)              scaled to size 14.05249pt on input line 16.
 
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[5.5]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T2A).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[6.6]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[7.7{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[8.8]
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 53.
+
+Overfull \hbox (3.55511pt too wide) in paragraph at lines 95--95
+[]|\T2A/Tempora-TLF/m/n/14.05249 (-20) CAPA-менеджмент
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 95--95
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Низкая (руч^^?
+ []
+
+
+Underfull \hbox (badness 3354) in paragraph at lines 95--95
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Нет / ча^^?стич^^?ная
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Статический
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+\T2A/Tempora-TLF/m/n/14.05249 (+20) ана^^?лиз ко^^?да
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+\T2A/Tempora-TLF/m/n/14.05249 (+20) (SonarQube,
+ []
+
+
+Underfull \hbox (badness 1776) in paragraph at lines 95--95
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Высокая (ав^^?
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 95--95
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Да (пла^^?ги^^?ны для
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Нет (ана^^?лиз
+ []
+
+
+Underfull \hbox (badness 4048) in paragraph at lines 95--95
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) ML-анализ ком^^?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+\T2A/Tempora-TLF/m/n/14.05249 (+20) ми^^?тов (JIT-^^?SDP,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Низкая (би^^?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+\T2A/Tempora-TLF/m/n/14.05249 (+20) нар^^?ная мет^^?ка
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+\T2A/Tempora-TLF/m/n/14.05249 (+20) ѕано^^?ма^^?лен/^^?нор^^?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Классификация
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+\T2A/Tempora-TLF/m/n/14.05249 (+20) ком^^?ми^^?тов
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Да (CI-^^?боты,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Средняя/Низкая
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+\T2A/Tempora-TLF/m/n/14.05249 (+20) (мет^^?ки, black-^^?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+\T2A/Tempora-TLF/m/n/14.05249 (+20) зи^^?то^^?рия (TOM,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+\T2A/Tempora-TLF/m/n/14.05249 (+20) PR-^^?реко^^?мен^^?
+ []
+
+
+Underfull \hbox (badness 2600) in paragraph at lines 95--95
+\T2A/Tempora-TLF/m/n/14.05249 (+20) вые ре^^?ко^^?мен^^?да^^?
+ []
+
+
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[9.9]) (./my_folder/chapter2.tex
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3790,10 +3911,14 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [10.10]
-Overfull \hbox (30.4848pt too wide) in paragraph at lines 142--150
- [][] 
- []
-
+LaTeX Font Info:    Trying to load font information for TS1+Tempora-TLF on inpu
+t line 19.
+ (c:/texlive/2024/texmf-dist/tex/latex/tempora/TS1Tempora-TLF.fd
+File: TS1Tempora-TLF.fd 2016/02/02 (autoinst) Font definitions for TS1/Tempora-
+TLF.
+)
+LaTeX Font Info:    Font shape `TS1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 14.05249pt on input line 19.
 
 
 
@@ -3818,7 +3943,13 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[12.12]) (./my_folder/chapter2.tex
+[12.12{c:/texlive/2024/texmf-dist/fonts/enc/dvips/tempora/tmp_ac5xuc.enc}]
+Overfull \hbox (87.8471pt too wide) in paragraph at lines 44--45
+[][]\T2A/cmtt/m/n/14.05249 [добавлено, удалено, #файлов, pylint_warns, eslint_e
+rrors, complexity_mean, ...][]\T2A/Tempora-TLF/m/n/14.05249 (-20) .
+ []
+
+
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3831,36 +3962,16 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [13.13]
+<my_folder/images/mermaid.png, id=179, 1148.79187pt x 346.29375pt>
+File: my_folder/images/mermaid.png Graphic file (type png)
+<use my_folder/images/mermaid.png>
+Package pdftex.def Info: my_folder/images/mermaid.png  used on input line 57.
+(pdftex.def)             Requested size: 532.0695pt x 160.39084pt.
 
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[14.14{c:/texlive/2024/texmf-dist/fonts/enc/dvips/tempora/tmp_q3dzgc.enc}])
-(./my_folder/chapter3.tex
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
+Overfull \hbox (48.37263pt too wide) in paragraph at lines 57--58
+ [][] 
  []
 
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[15.15]
-<my_folder/images/architect.png, id=231, 2055.68pt x 217.81375pt>
-File: my_folder/images/architect.png Graphic file (type png)
-<use my_folder/images/architect.png>
-Package pdftex.def Info: my_folder/images/architect.png  used on input line 9.
-(pdftex.def)             Requested size: 483.69687pt x 51.24937pt.
 
 
 
@@ -3873,7 +3984,31 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[16.16 <./my_folder/images/architect.png (PNG copy)>]
+[14.14]) (./my_folder/chapter3.tex
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[15.15 <./my_folder/images/mermaid.png>]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[16.16]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3886,11 +4021,6 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [17.17]
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: T2A).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3902,7 +4032,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[18.18{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
+[18.18]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3927,6 +4057,13 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [20.20]
+Underfull \hbox (badness 1810) in paragraph at lines 53--54
+\T2A/Tempora-TLF/m/n/14.05249 (+20) ([][]\T2A/cmtt/m/n/14.05249 external_styles
+heets=[dbc.themes.BOOTSTRAP][]\T2A/Tempora-TLF/m/n/14.05249 (+20) ), что га^^?р
+ан^^?ти^^?ру^^?ет
+ []
+
+
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3950,20 +4087,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[22.22]
-Underfull \hbox (badness 5288) in paragraph at lines 76--77
-[]\T2A/Tempora-TLF/b/n/14.05249 (+20) Адаптивность ин^^?тер^^?фей^^?са: \T2A/Te
-mpora-TLF/m/n/14.05249 (+20) При со^^?зда^^?нии при^^?ло^^?же^^?ния ис^^?поль^^
-?зо^^?ва^^?
- []
-
-
-Underfull \hbox (badness 5954) in paragraph at lines 76--77
-\T2A/Tempora-TLF/m/n/14.05249 (+20) но^^?сти, при ини^^?ци^^?а^^?ли^^?за^^?ции 
-при^^?ло^^?же^^?ния под^^?клю^^?че^^?на те^^?ма Bootstrap
- []
-
-
+[22.22]) (./my_folder/chapter4.tex
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3975,7 +4099,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[23.23]) (./my_folder/chapter4.tex
+[23.23]) (./my_folder/conclusion.tex
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3987,7 +4111,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[24.24])
+[24.24]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3999,7 +4123,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[25.25] (./my_folder/conclusion.tex
+[25.25]) (./my_folder/acronyms.tex) (./my_folder/dictionary.tex
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4011,7 +4135,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[26.26]
+[26.26]) (./my_folder/references.tex
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4023,7 +4147,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[27.27]) (./my_folder/acronyms.tex) (./my_folder/dictionary.tex
+[27.27]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4035,34 +4159,10 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[28.28]) (./my_folder/references.tex
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[29.29]
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[30.30]
+[28.28]
 bibitemlist
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
+Underfull \hbox (badness 10000) in paragraph at lines 18--22
 \T2A/Tempora-TLF/m/n/14.05249 (+20) A _ meta-[]analytical _ comparison _ of _ N
 aive _ Bayes _ and _ Random _ Forest _ for _
  []
@@ -4079,7 +4179,19 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[31.31])
+[29.29]
+Underfull \hbox (badness 10000) in paragraph at lines 63--65
+\T2A/Tempora-TLF/m/n/14.05249 (+20) fda . gov / inspections-[]compliance-[]enfo
+rcement-[]and-[]criminal-[]investigations /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--75
+\T2A/Tempora-TLF/m/n/14.05249 (+20) net / pro^^\le / Samesun-[]Singh / post / I
+ _ need _ a _ question _ depending _ on _ PICO _
+ []
+
+)
 
 Package xassoccnt Warning: Warning: An accidental(?) addition of associated
 (xassoccnt)                counter(s) without DeclareAssociatedCounters was
@@ -4100,12 +4212,12 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[32.32] (./my_folder/appendix1.tex) (./my_folder/appendix2.tex)
+[30.30] (./my_folder/appendix1.tex) (./my_folder/appendix2.tex)
 
 Class memoir Warning: The material used in the footer is too large
 (12.64719pt) for the given foot skip (0.0pt), it is recommended to
 either increase the foot skip or redesign the footer
-(in both cases you will find help in the memoir manual). on input line 86.
+(in both cases you will find help in the memoir manual). on input line 85.
 
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 138.
@@ -4124,39 +4236,43 @@ No complaints by nag.
 \openout9 = `My_thesis.toc'.
 
 (./My_thesis.aux
-Package cleveref Info: loaded `russian' language definitions on input line 13.
+Package cleveref Info: loaded `russian' language definitions on input line 12.
 )
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `My_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: EA958BFB912836675837ECAFD92E433C;2430.
+(rerunfilecheck)             Checksum: 444026C4E2852B0D9298A6CED1EE0956;3315.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                My_thesis
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'My_thesis.run.xml'.
 \openout1 = `My_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47983 strings out of 473330
- 837817 string characters out of 5723877
- 2000153 words of memory out of 5000000
- 69894 multiletter control sequences out of 15000+600000
- 663429 words of font info for 249 fonts, out of 8000000 for 9000
+ 47779 strings out of 473330
+ 833762 string characters out of 5723877
+ 2003577 words of memory out of 5000000
+ 69809 multiletter control sequences out of 15000+600000
+ 622898 words of font info for 170 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,123p,3236b,3221s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><c:/texlive/
-2024/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb><c:/texlive/2024/te
-xmf-dist/fonts/type1/public/tempora/Tempora-BoldItalic.pfb><c:/texlive/2024/tex
-mf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb><c:/texlive/2024/texmf-di
-st/fonts/type1/public/tempora/Tempora-Regular.pfb><c:/texlive/2024/texmf-dist/f
-onts/type1/public/amsfonts/euler/eurm10.pfb><c:/texlive/2024/texmf-dist/fonts/t
-ype1/public/cm-super/sftt1440.pfb><c:/texlive/2024/texmf-dist/fonts/type1/publi
-c/newtx/txmiaX.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/newtx/txsys.p
-fb>
-Output written on My_thesis.pdf (32 pages, 353527 bytes).
+ 99i,16n,123p,3533b,3221s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb><c:/t
+exlive/2024/texmf-dist/fonts/type1/public/tempora/Tempora-BoldItalic.pfb><c:/te
+xlive/2024/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb><c:/texliv
+e/2024/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb>
+Output written on My_thesis.pdf (30 pages, 398488 bytes).
 PDF statistics:
- 405 PDF objects out of 1000 (max. 8388607)
- 348 compressed objects within 4 object streams
- 123 named destinations out of 1000 (max. 500000)
- 47710 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 343 PDF objects out of 1000 (max. 8388607)
+ 297 compressed objects within 3 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 27230 words of extra memory for PDF output out of 29859 (max. 10000000)
 
