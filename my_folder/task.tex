@@ -1,11 +1,13 @@
 %%%% Начало оформления заголовка - оставить без изменений !!! %%%%
 \input{my_folder/task_settings}	% настройки - начало 
 
-{%\normalfont %2020
-	\MakeUppercase{\SPbPU}}\\
-\institute
-
-\par}\intervalS% завершает input
+\normalfont%
+{\centering%
+	\Ministry\\
+	\SPbPU\\
+	{%\bfseries %2020 - указание на изменения, которые могут быть введены в 2020 году
+		\institute}
+	\par}%\intervalS% завершает input
 
 \noindent
 \begin{minipage}{\linewidth}
@@ -24,7 +26,7 @@
 ЗАДАНИЕ\\
 на выполнение %с 2020 года 
 %по выполнению % до 2020 года
-выпускной квалификационной работы
+выпускной квалификационной работы}
 
 
 \intervalS\normalfont%
@@ -64,18 +66,16 @@
 \begin{enumerate}[label=\theenumi\arabic*.]
 \item Сравнительная таблица средств CAPA.
 \item Диаграмма вариантов использования.
+\item Функциональная модель IDEF0.
 \item Архитектура разработанной программы.
 \item Диаграмма классов.
+\item Графики и таблицы с результатами модульного и нагрузочного тестирования, включая оценку качества тестов, результатами экспериментов, сравнения разных алгоритмов машинного обучения.
 \end{enumerate}
 \item Перечень используемых информационных технологий, в том числе программное обеспечение, облачные сервисы, базы данных и прочие сквозные цифровые технологии (при наличии):
 \begin{enumerate}[label=\theenumi\arabic*.]
-\item Python 3.9.
-\item Git, Github.
-\item Pandas.
-\item NumPy.
-\item Scikit-learn.
-\item Plotly.
-\item Dash.
+\item Python, Git, Github.
+\item Pandas, NumPy, Scikit-learn.
+\item Plotly, Dash.
 \end{enumerate}
 \item Консультанты по работе:
 \begin{enumerate}[label=\theenumi\arabic*.] 
