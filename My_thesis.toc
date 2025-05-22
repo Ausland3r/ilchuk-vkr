@@ -45,13 +45,7 @@
 \contentsline {subsection}{\numberline {3.3.4}Генерация и отображение рекомендаций CAPA}{34}{subsection.3.3.4}%
 \contentsline {section}{\numberline {3.4}Интеграция компонентов в единую систему}{35}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Выводы}{36}{section.3.5}%
-\contentsline {chapter}{\chapternumberline {4}Апробация результатов исследования}{36}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Цель и задачи апробации}{36}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Методика тестирования}{37}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Сравнение моделей RandomForest, DeepForest и XGBoost}{38}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Практическое применение и апробация}{40}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Выводы}{40}{section.4.5}%
-\contentsline {chapter}{Заключение}{41}{chapter*.16}%
-\contentsline {chapter}{Словарь терминов}{43}{chapter*.17}%
-\contentsline {chapter}{Список использованных источников}{44}{chapter*.18}%
-\contentsline {chapter}{Библиографический список}{45}{chapter*.19}%
+\contentsline {chapter}{Заключение}{37}{chapter*.13}%
+\contentsline {chapter}{Словарь терминов}{62}{chapter*.15}%
+\contentsline {chapter}{Список использованных источников}{63}{chapter*.16}%
+\contentsline {chapter}{Библиографический список}{64}{chapter*.17}%

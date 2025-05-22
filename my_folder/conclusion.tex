@@ -24,3 +24,925 @@
 \end{itemize}
 
 Таким образом, проведенное исследование подтвердило эффективность предложенного подхода к анализу коммитов. Разработанная система способствует улучшению управления процессом разработки программного обеспечения, сокращает время на выявление потенциальных проблем и повышает качество выпускаемого кода.
+
+
+\chapter*{Приложение} \label{ch5}
+
+\begin{lstlisting}[language=Python, caption={{ \texttt{repository\_analysis.py}}}]
+	# repository_analysis.py
+	
+	import os
+	import requests
+	import re
+	import json
+	import subprocess
+	from datetime import datetime
+	import pandas as pd
+	from git import Repo, GitCommandError
+	from typing import List, Dict, Optional
+	
+	from xgboost import XGBClassifier
+	
+	from ml_model import CommitRiskModel
+	from recommendations import generate_recommendations
+	
+	# mapping extension → analyzer name
+	LANGUAGE_ANALYZERS = {
+		'.py': 'python',
+		'.js': 'javascript',
+		'.ts': 'javascript',
+		'.java': 'java',
+	}
+	
+	class GitHubRepoAnalyzer:
+	def __init__(
+	self,
+	repo_owner: str,
+	repo_name: str,
+	token: str,
+	clone_dir: str = "/tmp",
+	):
+	self.repo_owner = repo_owner
+	self.repo_name = repo_name
+	self.token = token
+	self.api_url = f"https://api.github.com/repos/{repo_owner}/{repo_name}"
+	self.headers = {"Authorization": f"token {token}"}
+	
+	self.local_path = os.path.join(clone_dir, repo_name)
+	if not os.path.isdir(self.local_path):
+	clone_url = f"https://github.com/{repo_owner}/{repo_name}.git"
+	print(f"[INIT] Cloning repository {clone_url} into {self.local_path}")
+	Repo.clone_from(clone_url, self.local_path)
+	print(f"[INIT] Clone complete.")
+	else:
+	print(f"[INIT] Repository already cloned at {self.local_path}.")
+	self.repo = Repo(self.local_path)
+	print(f"[INIT] Repo object ready at {self.local_path}.")
+	
+	self.complexity_re = re.compile(r"\b(if|for|while|switch|case)\b")
+	
+	def get_commits(self) -> List[Dict]:
+	print("[COMMITS] Fetching commits via GitHub API")
+	commits, page, per_page = [], 1, 100
+	while True:
+	print(f"[COMMITS] Requesting page {page}")
+	resp = requests.get(
+	f"{self.api_url}/commits",
+	headers=self.headers,
+	params={"page": page, "per_page": per_page},
+	)
+	data = resp.json()
+	if resp.status_code == 401:
+	raise RuntimeError("Bad credentials: check your GITHUB_TOKEN")
+	if not isinstance(data, list):
+	print(f"[COMMITS] Unexpected response: {data}")
+	break
+	commits.extend(data)
+	print(f"[COMMITS] Retrieved {len(data)} commits in page {page}.")
+	if len(data) < per_page:
+	print(f"[COMMITS] Less than {per_page} commits on page {page}, finishing.")
+	break
+	page += 1
+	print(f"[COMMITS] Total commits fetched: {len(commits)}")
+	return commits
+	
+	def get_commit_details(self, sha: str) -> Dict:
+	print(f"[DETAILS] Fetching details for commit {sha}")
+	resp = requests.get(f"{self.api_url}/commits/{sha}", headers=self.headers)
+	return resp.json()
+	
+	def detect_language(self, filename: str) -> str:
+	_, ext = os.path.splitext(filename.lower())
+	return LANGUAGE_ANALYZERS.get(ext, "")
+	
+	def analyze_python_file(self, full_path: str) -> Dict[str,int]:
+	pyl_w = pyl_e = bandit = 0
+	try:
+	r = subprocess.run(
+	["pylint", full_path, "--output-format=json"],
+	stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, text=True
+	)
+	msgs = json.loads(r.stdout or "[]")
+	for m in msgs:
+	if m.get("type") == "error":
+	pyl_e += 1
+	else:
+	pyl_w += 1
+	except Exception:
+	print(f"[ANALYZE][PY] Pylint failed on {full_path}")
+	try:
+	r = subprocess.run(
+	["bandit", "-f", "json", "-r", full_path],
+	stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, text=True
+	)
+	js = json.loads(r.stdout or "{}")
+	bandit = len(js.get("results", []))
+	except Exception:
+	print(f"[ANALYZE][PY] Bandit failed on {full_path}")
+	return {"pylint_warnings": pyl_w, "pylint_errors": pyl_e, "bandit_issues": bandit}
+	
+	def analyze_javascript_file(self, full_path: str) -> Dict[str,int]:
+	w = e = 0
+	try:
+	r = subprocess.run(
+	["eslint", full_path, "-f", "json"],
+	stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, text=True
+	)
+	arr = json.loads(r.stdout or "[]")
+	for file_res in arr:
+	for msg in file_res.get("messages", []):
+	if msg.get("severity") == 2:
+	e += 1
+	else:
+	w += 1
+	except Exception:
+	print(f"[ANALYZE][JS] ESLint failed on {full_path}")
+	return {"eslint_warnings": w, "eslint_errors": e}
+	
+	def analyze_java_file(self, full_path: str) -> Dict[str,int]:
+	count = 0
+	try:
+	r = subprocess.run(
+	["checkstyle", "-f", "plain", full_path],
+	stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, text=True
+	)
+	for ln in r.stdout.splitlines():
+	if "ERROR" in ln or "WARNING" in ln:
+	count += 1
+	except Exception:
+	print(f"[ANALYZE][JAVA] Checkstyle failed on {full_path}")
+	return {"checkstyle_issues": count}
+	
+	def compute_repo_stats(self, commits: List[Dict]) -> Dict:
+	import pandas as pd
+	df = pd.DataFrame(commits)
+	stats = {}
+	for f in ['lines_added', 'lines_deleted', 'files_changed',
+	'avg_file_history', 'message_length', 'complexity_score']:
+	if f in df:
+	stats[f] = {
+		'mean': df[f].mean(),
+		'std': df[f].std(),
+		'quantile_90': df[f].quantile(0.90),
+		'quantile_95': df[f].quantile(0.95),
+	}
+	stats['author_stats'] = {a: {'median_lines_added': grp.median()}
+		for a, grp in df.groupby('author_name')['lines_added']}
+	if 'minutes_since_previous_commit' in df:
+	stats['commit_interval'] = {'median': df['minutes_since_previous_commit'].median()}
+	return stats
+	
+	def analyze_commits(self) -> List[Dict]:
+	print("[ANALYZE]Starting commit-by-commit analysis")
+	commits_data, file_count = [], {}
+	
+	all_commits = self.get_commits()
+	all_commits.reverse()
+	prev_dt = None
+	
+	for idx, c in enumerate(all_commits, 1):
+	sha = c["sha"]
+	print(f"[ANALYZE] ({idx}/{len(all_commits)}) Processing commit {sha}")
+	det = self.get_commit_details(sha)
+	
+	try:
+	print(f"[GIT] Checking out {sha}")
+	self.repo.git.checkout(sha)
+	except GitCommandError:
+	print(f"[GIT] Cannot checkout {sha}, skipping FS analysis")
+	
+	msg = det["commit"]["message"]
+	author = det["commit"]["author"]
+	name = author.get("name", "Unknown")
+	dt = datetime.strptime(author["date"], "%Y-%m-%dT%H:%M:%SZ")
+	
+	files = det.get("files", [])
+	print(f"[ANALYZE]  {len(files)} files changed")
+	
+	added = sum(f.get("additions", 0) for f in files)
+	deleted = sum(f.get("deletions", 0) for f in files)
+	hist = sum(file_count.get(f["filename"], 0) for f in files)
+	avg_hist = hist / len(files) if files else 0
+	
+	comp = 0
+	for f in files:
+	for ln in f.get("patch", "").splitlines():
+	if ln.startswith("+") and not ln.startswith("+++") and self.complexity_re.search(ln):
+	comp += 1
+	
+	delta = (dt - prev_dt).total_seconds() / 60 if prev_dt else None
+	
+	metrics = {k: 0 for k in (
+		"pylint_warnings","pylint_errors","bandit_issues",
+		"eslint_warnings","eslint_errors","checkstyle_issues"
+		)}
+	for f in files:
+	lang = self.detect_language(f["filename"])
+	full = os.path.join(self.local_path, f["filename"])
+	if lang:
+	print(f"[ANALYZE]Running {lang} analysis on {f['filename']}")
+	if lang == "python":
+	out = self.analyze_python_file(full)
+	elif lang == "javascript":
+	out = self.analyze_javascript_file(full)
+	elif lang == "java":
+	out = self.analyze_java_file(full)
+	else:
+	out = {}
+	for k,v in out.items():
+	metrics[k] += v
+	
+	data = {
+		"commit": sha,
+		"author_name": name,
+		"author_datetime": dt,
+		"minutes_since_previous_commit": delta,
+		"message": msg,
+		"message_length": len(msg),
+		"lines_added": added,
+		"lines_deleted": deleted,
+		"files_changed": len(files),
+		"avg_file_history": avg_hist,
+		"complexity_score": comp,
+		"file_list": [f["filename"] for f in files],
+		**metrics
+	}
+	commits_data.append(data)
+	
+	for f in files:
+	file_count[f["filename"]] = file_count.get(f["filename"], 0) + 1
+	prev_dt = dt
+	
+	print(f"[ANALYZE] Completed analysis of {len(commits_data)} commits.")
+	return commits_data
+	
+	def create_capa_file(self, commits: List[Dict]) -> str:
+	path = os.path.join(self.local_path, "CapaRecommendations.md")
+	with open(path, "w", encoding="utf-8") as f:
+	f.write("CAPA Recommendations\n\n")
+	for c in commits:
+	if c.get("has_capa"):
+	f.write(f"Commit {c['commit']} — risk={c['Risk_Proba']:.2f}\n")
+	for rec in c["capa_recommendations"]:
+	f.write(f"- {rec}\n")
+	f.write("\n")
+	return path
+	
+	def push_and_create_pr(self, branch_name: str, file_path: str) -> None:
+	print(f"[PR] Fetching origin")
+	self.repo.git.fetch('origin')
+	
+	base_branch = 'main'
+	
+	if branch_name in self.repo.branches:
+	print(f"[PR] Branch {branch_name} already exists locally, checking out.")
+	self.repo.git.checkout(branch_name)
+	else:
+	print(f"[PR] Creating branch {branch_name} from origin/{base_branch}")
+	self.repo.git.checkout('-b', branch_name, f'origin/{base_branch}')
+	
+	rel_path = os.path.relpath(file_path, self.local_path)
+	print(f"[PR] Adding file {rel_path}")
+	self.repo.index.add([rel_path])
+	print(f"[PR] Committing changes")
+	self.repo.index.commit("Add CAPA recommendations")
+	
+	print(f"[PR] Pushing branch {branch_name}")
+	origin = self.repo.remote(name='origin')
+	origin.push(branch_name)
+	
+	pr_data = {
+		"title": "Add automated CAPA recommendations",
+		"head": f"{self.repo_owner}:{branch_name}",
+		"base": base_branch,
+		"body": "This PR adds automatically generated corrective/preventive actions."
+	}
+	print(f"[PR] Opening PR via GitHub API")
+	response = requests.post(
+	f"{self.api_url}/pulls",
+	headers=self.headers,
+	json=pr_data
+	)
+	if response.status_code in (200, 201):
+	pr_url = response.json().get("html_url")
+	print(f"[PR] Pull request created: {pr_url}")
+	else:
+	print(f"[PR]Failed to create PR: {response.status_code} {response.text}")
+	
+	def analyze_and_pr(self, commits: Optional[List[Dict]] = None) -> None:
+	if commits is None:
+	commits = self.analyze_commits()
+	
+	if not commits:
+	print("No commits — пропускаем PR.")
+	return
+	
+	model = CommitRiskModel(classifier=XGBClassifier(eval_metric="logloss"))
+	model.fit(commits)
+	probs = model.predict_proba(commits)
+	
+	repo_stats = self.compute_repo_stats(commits)
+	
+	for commit, p in zip(commits, probs):
+	commit["Risk_Proba"] = float(p)
+	commit["has_capa"] = True
+	commit["capa_recommendations"] = generate_recommendations(
+	commit, p, repo_stats, model.feature_importances()
+	)
+	
+	md_path = self.create_capa_file(commits)
+	branch = f"capa-{datetime.utcnow():%Y%m%d%H%M}"
+	self.push_and_create_pr(branch, md_path)
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python, caption={{ \texttt{ml\_model.py}}}]
+	# ml_models.py
+	from collections import Counter
+	from typing import List, Dict, Any, Optional
+	import numpy as np
+	from deepforest import CascadeForestClassifier
+	from sklearn.base import ClassifierMixin
+	from sklearn.cluster import KMeans
+	from sklearn.inspection import permutation_importance
+	from sklearn.metrics import precision_score, recall_score, f1_score, roc_auc_score
+	from sklearn.model_selection import train_test_split
+	
+	
+	class CommitRiskModel:
+	def __init__(
+	self,
+	classifier: ClassifierMixin,
+	features: Optional[List[str]] = None,
+	cluster_model: Optional[KMeans] = None
+	):
+	self.classifier = classifier
+	self.features = features or [
+	'lines_added', 'lines_deleted', 'files_changed',
+	'avg_file_history', 'message_length',
+	'has_bug_keyword', 'complexity_score'
+	]
+	self.cluster_model = cluster_model or KMeans(n_clusters=2, random_state=0, n_init=10)
+	self._is_fitted = False
+	self._X: Optional[np.ndarray] = None
+	self._y: Optional[np.ndarray] = None
+	
+	def _extract_X(self, commits: List[Dict[str, Any]]) -> np.ndarray:
+	return np.array([[commit.get(f, 0) for f in self.features] for commit in commits])
+	
+	def _generate_pseudo_labels(self, X: np.ndarray) -> np.ndarray:
+	labels = self.cluster_model.fit_predict(X)
+	centers = self.cluster_model.cluster_centers_
+	
+	dist0 = np.linalg.norm(X - centers[0], axis=1)
+	dist1 = np.linalg.norm(X - centers[1], axis=1)
+	
+	prob_cluster1 = dist0 / (dist0 + dist1 + 1e-8)
+	
+	if centers[0, 0] > centers[1, 0]:
+	prob_risky = 1 - prob_cluster1
+	else:
+	prob_risky = prob_cluster1
+	
+	threshold = 0.3
+	labels_soft = (prob_risky >= threshold).astype(int)
+	
+	return labels_soft
+	
+	def fit(self, commits: List[Dict[str, Any]]):
+	X = self._extract_X(commits)
+	y = self._generate_pseudo_labels(X)
+	self.classifier.fit(X, y)
+	self._X, self._y = X, y
+	self._is_fitted = True
+	return self
+	
+	def predict(self, commits: List[Dict[str, Any]]) -> np.ndarray:
+	assert self._is_fitted, "Модель не обучена"
+	X = self._extract_X(commits)
+	return self.classifier.predict(X)
+	
+	def predict_proba(self, commits: List[Dict[str, Any]]) -> np.ndarray:
+	assert self._is_fitted, "Модель не обучена"
+	X = self._extract_X(commits)
+	return self.classifier.predict_proba(X)[:, 1]
+	
+	def feature_importances(self) -> Dict[str, float]:
+	if not self._is_fitted or self._X is None or self._y is None:
+	raise RuntimeError("Нужно вызвать .fit() перед feature_importances()")
+	if hasattr(self.classifier, "feature_importances_"):
+	vals = self.classifier.feature_importances_
+	else:
+	result = permutation_importance(
+	self.classifier, self._X, self._y,
+	n_repeats=5, random_state=0, n_jobs=-1
+	)
+	vals = result.importances_mean
+	return dict(zip(self.features, vals))
+	
+	def evaluate_model(self, commits: List[Dict[str, Any]]) -> Dict[str, float]:
+	X = self._extract_X(commits)
+	y = self._generate_pseudo_labels(X)
+	print("[DEBUG] Метки (y) распределение:", Counter(y))
+	
+	if len(set(y)) < 2:
+	print("[WARNING] В данных только один класс, метрики классификации не применимы.")
+	clf = self.classifier
+	clf.fit(X, y)
+	y_pred = clf.predict(X)
+	y_proba = clf.predict_proba(X)[:, 1] if hasattr(clf, "predict_proba") else np.zeros_like(y_pred,
+	dtype=float)
+	return {
+		"precision": 0.0,
+		"recall": 0.0,
+		"f1_score": 0.0,
+		"auc": 0.0
+	}
+	
+	stratify_param = y if min(Counter(y).values()) > 1 else None
+	X_train, X_test, y_train, y_test = train_test_split(
+	X, y, test_size=0.2, random_state=42, stratify=stratify_param
+	)
+	
+	if isinstance(self.classifier, CascadeForestClassifier):
+	clf = CascadeForestClassifier(random_state=42)
+	else:
+	from copy import deepcopy
+	clf = deepcopy(self.classifier)
+	
+	clf.fit(X_train, y_train)
+	y_pred = clf.predict(X_test)
+	print("[DEBUG] y_pred распределение:", Counter(y_pred))
+	
+	if hasattr(clf, "predict_proba"):
+	y_proba = clf.predict_proba(X_test)[:, 1]
+	print("[DEBUG] y_proba min/max:", y_proba.min(), y_proba.max())
+	else:
+	y_proba = np.zeros_like(y_pred, dtype=float)
+	
+	precision = precision_score(y_test, y_pred, zero_division=0)
+	recall = recall_score(y_test, y_pred, zero_division=0)
+	f1 = f1_score(y_test, y_pred, zero_division=0)
+	auc = roc_auc_score(y_test, y_proba) if len(set(y_test)) == 2 else 0.0
+	
+	return {
+		"precision": precision,
+		"recall": recall,
+		"f1_score": f1,
+		"auc": auc
+	}
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python, caption={{ \texttt{app.py}}}]
+	# app.py
+	
+	import os
+	from dotenv import load_dotenv
+	import dash
+	from dash import dcc, html, dash_table
+	from dash.dependencies import Input, Output
+	import dash_bootstrap_components as dbc
+	import plotly.express as px
+	import plotly.graph_objects as go
+	import pandas as pd
+	import numpy as np
+	
+	from repository_analysis import GitHubRepoAnalyzer
+	from ml_model import CommitRiskModel
+	from xgboost import XGBClassifier
+	from deepforest import CascadeForestClassifier
+	from recommendations import generate_recommendations
+	
+	# 1. Загрузка настроек
+	load_dotenv()
+	github_token = os.getenv('GITHUB_TOKEN')
+	repos = [r for r in os.getenv("GITHUB_REPOS", "").split(",") if r]
+	
+	# 2. Сбор и анализ каждого репозитория
+	analyses = {}
+	for full_name in repos:
+	owner, name = full_name.split("/")
+	analyzer = GitHubRepoAnalyzer(owner, name, github_token)
+	commits = analyzer.analyze_commits()
+	analyzer.analyze_and_pr(commits)
+	
+	# 3. Обучение модели на коммитах
+	#model = CommitRiskModel(XGBClassifier(eval_metric="logloss"))
+	model = CommitRiskModel(CascadeForestClassifier(random_state=42))
+	model.fit(commits)
+	metrics = model.evaluate_model(commits)
+	
+	# 4. Подготовка DataFrame
+	df = pd.DataFrame(commits)
+	df['Risk_Proba'] = model.predict_proba(commits)
+	df['Risk'] = (df['Risk_Proba'] > 0.5).astype(int)
+	
+	analyses[full_name] = {
+		'df': df,
+		'model': model,
+		'feat_imps': model.feature_importances(),
+		'metrics': metrics
+	}
+	
+	# 5. Инициализация Dash-приложения
+	app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LUX])
+	
+	app.layout = dbc.Container(fluid=True, children=[
+	html.H1("Мульти-репозиторный анализ коммитов", className="text-center my-4"),
+	dcc.Dropdown(
+	id="repo-selector",
+	options=[{"label": r, "value": r} for r in repos],
+	value=repos[0] if repos else None,
+	clearable=False,
+	style={"width": "60%", "margin": "0 auto 20px auto"}
+	),
+	html.Div(id="tabs-container")
+	])
+	
+	@app.callback(
+	Output("tabs-container", "children"),
+	Input("repo-selector", "value")
+	)
+	def update_tabs(selected_repo):
+	if not selected_repo or selected_repo not in analyses:
+	return html.Div("Репозиторий не выбран или недоступен")
+	
+	entry = analyses[selected_repo]
+	df = entry['df'].copy()
+	feat_imps = entry['feat_imps']
+	metrics = entry.get('metrics', {})
+	metrics_table = dbc.Table([
+	html.Thead(html.Tr([html.Th("Метрика"), html.Th("Значение")])),
+	html.Tbody([
+	html.Tr([html.Td("Precision"), html.Td(f"{metrics.get('precision', 0):.2f}")]),
+	html.Tr([html.Td("Recall"), html.Td(f"{metrics.get('recall', 0):.2f}")]),
+	html.Tr([html.Td("F1-score"), html.Td(f"{metrics.get('f1_score', 0):.2f}")]),
+	html.Tr([html.Td("ROC-AUC"), html.Td(f"{metrics.get('auc', 0):.2f}")]),
+	])
+	], bordered=True, striped=True, hover=True, style={"width": "40%", "marginTop": "20px"})
+	features = entry['model'].features
+	
+	# Подстраховки
+	if 'author_name' not in df:
+	df['author_name'] = 'Unknown'
+	if 'has_bug_keyword' not in df:
+	df['has_bug_keyword'] = df['message'].str.contains(
+	r'\b(fix|bug|error)\b', case=False, regex=True, na=False
+	).astype(int)
+	
+	# 6. Общая информация
+	tab_summary = dcc.Tab(label='Общая информация', children=[
+	dbc.Row([
+	dbc.Col(dcc.Graph(
+	figure=px.histogram(
+	df, x='lines_added', nbins=30,
+	title='Добавленные строки',
+	color_discrete_sequence=['#1f77b4']  # синяя
+	)
+	), md=6),
+	dbc.Col(dcc.Graph(
+	figure=px.histogram(
+	df, x='lines_deleted', nbins=30,
+	title='Удалённые строки',
+	color_discrete_sequence=['#d62728']  # красная
+	)
+	), md=6),
+	], className="g-4"),
+	dbc.Row([
+	dbc.Col(dcc.Graph(
+	figure=px.histogram(
+	df, x='files_changed', nbins=30,
+	title='Изменённые файлы',
+	color_discrete_sequence=['#2ca02c']  # зелёная
+	)
+	), md=6),
+	dbc.Col(dcc.Graph(
+	figure=px.histogram(
+	df, x='complexity_score', nbins=30,
+	title='Сложность изменений',
+	color_discrete_sequence=['#9467bd']  # фиолетовая
+	)
+	), md=6),
+	], className="g-4"),
+	])
+	
+	# 7. Анализ риска
+	fi_vals = [feat_imps.get(f, 0) for f in features]
+	tab_risk = dcc.Tab(label='Анализ риска', children=[
+	metrics_table,
+	dbc.Row(dbc.Col(dcc.Graph(
+	figure=px.bar(
+	x=features, y=fi_vals,
+	title='Важность признаков',
+	color_discrete_sequence=px.colors.qualitative.Set2
+	)
+	)), className="g-4"),
+	dbc.Row([
+	dbc.Col(dcc.Graph(
+	figure=px.pie(
+	df, names='Risk', title='Рискованные vs обычные',
+	color_discrete_sequence=['#2ca02c', '#d62728']
+	)
+	), md=6),
+	dbc.Col(dcc.Graph(
+	figure=px.scatter(
+	df, x='lines_added', y='complexity_score',
+	color='Risk', title='Риск vs Сложность',
+	color_discrete_sequence=['#2ca02c', '#d62728']
+	)
+	), md=6),
+	], className="g-4"),
+	])
+	
+	# 8. Авторы
+	author_activity = df['author_name'].value_counts().reset_index()
+	author_activity.columns = ['author_name', 'commit_count']
+	author_risk = df.groupby('author_name')['Risk_Proba'] \
+	.mean().reset_index() \
+	.sort_values('Risk_Proba', ascending=False)
+	
+	tab_authors = dcc.Tab(label='Авторы', children=[
+	dbc.Row([
+	dbc.Col(dcc.Graph(
+	figure=px.bar(
+	author_activity, x='author_name', y='commit_count',
+	title='Активность авторов',
+	color_discrete_sequence=px.colors.sequential.Viridis
+	)
+	), md=6),
+	dbc.Col(dcc.Graph(
+	figure=px.bar(
+	author_risk, x='author_name', y='Risk_Proba',
+	title='Средний риск по авторам',
+	color_discrete_sequence=px.colors.sequential.Reds
+	)
+	), md=6),
+	], className="g-4"),
+	])
+	
+	# 9. File-Risk Map
+	file_df = df.explode('file_list') if 'file_list' in df else pd.DataFrame()
+	if not file_df.empty:
+	fr = file_df.groupby('file_list').agg(
+	change_count=('file_list','size'),
+	avg_risk=('Risk_Proba','mean')
+	).reset_index()
+	else:
+	fr = pd.DataFrame(columns=['file_list','change_count','avg_risk'])
+	tab_file_risk = dcc.Tab(label='File-Risk Map', children=[
+	dbc.Row(dbc.Col(dcc.Graph(
+	figure=px.scatter(
+	fr, x='change_count', y='avg_risk',
+	hover_name='file_list',
+	title='Частота изменений vs средний риск',
+	color_discrete_sequence=['#17becf']  # бирюзовая
+	)
+	)), className="g-4")
+	])
+	
+	# 10. Risk Timeline
+	df['commit_date'] = pd.to_datetime(df['author_datetime'], errors='coerce').dt.date
+	tl = df.sort_values('commit_date').groupby('commit_date').agg(
+	daily_risk=('Risk_Proba','mean'),
+	warnings=('Risk','sum')
+	).reset_index()
+	fig_tl = go.Figure([
+	go.Scatter(
+	x=tl['commit_date'], y=tl['daily_risk'],
+	mode='lines+markers', name='Средний риск',
+	line=dict(color='#1f77b4')
+	),
+	go.Bar(
+	x=tl['commit_date'], y=tl['warnings'],
+	name='Предупреждения', yaxis='y2', opacity=0.6,
+	marker_color='#ff7f0e'
+	)
+	])
+	fig_tl.update_layout(
+	title='Timeline риска и предупреждений',
+	yaxis=dict(title='Средний риск'),
+	yaxis2=dict(title='Кол-во предупреждений', overlaying='y', side='right')
+	)
+	tab_timeline = dcc.Tab(label='Risk Timeline', children=[
+	dbc.Row(dbc.Col(dcc.Graph(figure=fig_tl)), className="g-4")
+	])
+	
+	# 11. Code Quality Tabs
+	quality_tabs = []
+	if {'pylint_warnings','pylint_errors','bandit_issues'} <= set(df.columns):
+	quality_tabs.append(dcc.Tab(label='Python Quality', children=[
+	dbc.Row([
+	dbc.Col(dcc.Graph(
+	figure=px.histogram(
+	df, x='pylint_warnings',
+	title='Pylint Warnings',
+	color_discrete_sequence=['#9467bd']
+	)
+	), md=6),
+	dbc.Col(dcc.Graph(
+	figure=px.scatter(
+	df, x='pylint_errors', y='bandit_issues',
+	title='Errors vs Security Issues',
+	color_discrete_sequence=['#8c564b']
+	)
+	), md=6),
+	], className="g-4")
+	]))
+	if {'eslint_warnings','eslint_errors'} <= set(df.columns):
+	quality_tabs.append(dcc.Tab(label='JS Quality', children=[
+	dbc.Row([
+	dbc.Col(dcc.Graph(
+	figure=px.histogram(
+	df, x='eslint_warnings',
+	title='ESLint Warnings',
+	color_discrete_sequence=['#e377c2']
+	)
+	), md=6),
+	dbc.Col(dcc.Graph(
+	figure=px.scatter(
+	df, x='eslint_errors', y='eslint_warnings',
+	title='Errors vs Warnings',
+	color_discrete_sequence=['#7f7f7f']
+	)
+	), md=6),
+	], className="g-4")
+	]))
+	if 'checkstyle_issues' in df.columns:
+	quality_tabs.append(dcc.Tab(label='Java Quality', children=[
+	dbc.Row(dbc.Col(dcc.Graph(
+	figure=px.histogram(
+	df, x='checkstyle_issues',
+	title='Checkstyle Issues',
+	color_discrete_sequence=['#bcbd22']
+	)
+	)), className="g-4")
+	]))
+	
+	# 12. Commits Table
+	df['Recommendations'] = df.apply(
+	lambda row: generate_recommendations(row, row['Risk_Proba'], {}, feat_imps),
+	axis=1
+	)
+	df['Recommendations_Text'] = df['Recommendations'].apply(lambda recs: "; ".join(recs))
+	tab_table = dcc.Tab(label='Commits Table', children=[
+	dash_table.DataTable(
+	columns=[
+	{"name":"SHA","id":"commit"},
+	{"name":"Автор","id":"author_name"},
+	{"name":"Дата","id":"commit_date"},
+	{"name":"Риск","id":"Risk_Proba","type":"numeric","format":{"specifier":".2f"}},
+	{"name":"Сообщение","id":"message"},
+	{"name":"Рекомендации","id":"Recommendations_Text"},
+	],
+	data=df[['commit','author_name','commit_date','Risk_Proba','message','Recommendations_Text']]
+	.to_dict('records'),
+	page_size=10,
+	style_cell={'textAlign':'left','whiteSpace':'normal','height':'auto'},
+	style_header={'fontWeight':'bold'}
+	)
+	])
+	
+	# 13. Календарь активности
+	all_dates = pd.date_range(df['commit_date'].min(), df['commit_date'].max(), freq='D')
+	heat = pd.DataFrame({'date': all_dates})
+	heat['count'] = heat['date'].map(df['commit_date'].value_counts()).fillna(0)
+	heat['dow'] = heat['date'].dt.weekday
+	heat['week'] = ((heat['date'] - heat['date'].min()).dt.days // 7).astype(int)
+	max_w = heat['week'].max() + 1
+	mat = np.zeros((7, max_w))
+	for _, r in heat.iterrows():
+	mat[int(r['dow']), int(r['week'])] = r['count']
+	cal_fig = go.Figure(data=go.Heatmap(
+	z=mat,
+	x=[f'Неделя {i+1}' for i in range(max_w)],
+	y=['Пн','Вт','Ср','Чт','Пт','Сб','Вс'],
+	colorscale='Greens', hoverongaps=False,
+	colorbar=dict(title='Коммитов/день')
+	))
+	cal_fig.update_layout(xaxis=dict(scaleanchor='y', showgrid=False),
+	yaxis=dict(showgrid=False))
+	tab_calendar = dcc.Tab(label='Календарь активности', children=[
+	dbc.Row(dbc.Col(dcc.Graph(figure=cal_fig)), className="g-4")
+	])
+	
+	tabs = [
+	tab_summary,
+	tab_risk,
+	tab_authors,
+	tab_file_risk,
+	tab_timeline,
+	*quality_tabs,
+	tab_table,
+	tab_calendar
+	]
+	return dcc.Tabs(tabs)
+	
+	if __name__ == '__main__':
+	app.run(debug=True)
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python, caption={{ \texttt{recommendationds.py}}}]
+	# recommendations.py
+	from typing import List
+	
+	__all__ = ['generate_recommendations']
+	
+	def generate_recommendations(commit: dict,
+	risk_proba: float,
+	repo_stats: dict,
+	feature_importances: dict) -> List[str]:
+	
+	recommendations: List[str] = []
+	
+	if risk_proba > 0.8:
+	recommendations.append(
+	"Очень высокий риск: обязательно провести углублённое код-ревью и расширенное тестирование."
+	)
+	elif risk_proba > 0.5:
+	recommendations.append(
+	"Повышенный риск: обратите внимание на качество изменений и добавьте тесты."
+	)
+	
+	msg_len = commit.get('message_length', 0)
+	if msg_len < 20:
+	recommendations.append(
+	"Сообщение слишком короткое: дайте подробное описание изменений."
+	)
+	elif msg_len > 200:
+	recommendations.append(
+	"Очень длинное сообщение: разделите описание на ключевые пункты или используйте более лаконичные формулировки."
+	)
+	
+	if commit.get('has_bug_keyword', 0):
+	recommendations.append(
+	"Выявлен багфикс: убедитесь в наличии регрессионных тестов и обновлении документации."
+	)
+	
+	lines_added = commit.get('lines_added', 0)
+	lines_deleted = commit.get('lines_deleted', 0)
+	total = lines_added + lines_deleted
+	stats_total = repo_stats.get('total_changes', {})
+	mean_total = stats_total.get('mean')
+	std_total = stats_total.get('std')
+	if mean_total and std_total and total > mean_total + 2 * std_total:
+	recommendations.append(
+	f"Объём изменений ({total}) значительно превышает среднее ({mean_total:.1f}). "
+	"Разбейте коммит на более мелкие логические части."
+	)
+	
+	files_changed = commit.get('files_changed', 0)
+	stats_files = repo_stats.get('files_changed', {})
+	q95_files = stats_files.get('quantile_95')
+	if q95_files and files_changed > q95_files:
+	recommendations.append(
+	f"Затронуто слишком много файлов ({files_changed} > 95% квантиль). Проверьте целостность изменений."
+	)
+	
+	complexity = commit.get('complexity_score', 0)
+	stats_complex = repo_stats.get('complexity_score', {})
+	q90_complex = stats_complex.get('quantile_90')
+	if q90_complex and complexity > q90_complex:
+	recommendations.append(
+	f"Высокая сложность ({complexity} > 90% квантиль). "
+	"Рассмотрите рефакторинг и дополнительное покрытие тестами."
+	)
+	
+	avg_hist = commit.get('avg_file_history', 0)
+	stats_hist = repo_stats.get('avg_file_history', {})
+	mean_hist = stats_hist.get('mean')
+	std_hist = stats_hist.get('std')
+	if mean_hist and std_hist and avg_hist > mean_hist + 2 * std_hist:
+	recommendations.append(
+	f"Файлы часто меняются ({avg_hist:.1f} > {mean_hist:.1f} + 2σ). "
+	"Возможно, стоит разделить функциональность."
+	)
+	
+	interval = commit.get('minutes_since_previous_commit')
+	stats_interval = repo_stats.get('commit_interval', {})
+	median_int = stats_interval.get('median')
+	if interval is not None and median_int:
+	if interval < 5:
+	recommendations.append(
+	"Очень быстрый коммит (<5 минут): убедитесь, что изменения завершены и протестированы."
+	)
+	if interval > 2 * median_int:
+	recommendations.append(
+	f"Промежуток {interval:.0f} мин более чем в 2 раза дольше медианы "
+	f"({median_int:.0f} мин): проверьте актуальность ветки перед слиянием."
+	)
+	
+	author = commit.get('author_name', 'Unknown')
+	author_stats = repo_stats.get('author_stats', {}).get(author, {})
+	median_lines_author = author_stats.get('median_lines_added')
+	if median_lines_author and lines_added > 2 * median_lines_author:
+	recommendations.append(
+	f"Автор {author} внёс {lines_added} строк, что более чем в 2 раза превышает "
+	f"его медианные {median_lines_author} строк: дополнительная проверка кода."
+	)
+	
+	if not recommendations:
+	recommendations.append(
+	"Явных аномалий не обнаружено. Рекомендуется стандартное код-ревью и покрытие тестами."
+	)
+	
+	return recommendations
+\end{lstlisting}
