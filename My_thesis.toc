@@ -45,7 +45,16 @@
 \contentsline {subsection}{\numberline {3.3.4}Генерация и отображение рекомендаций CAPA}{34}{subsection.3.3.4}%
 \contentsline {section}{\numberline {3.4}Интеграция компонентов в единую систему}{35}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Выводы}{36}{section.3.5}%
-\contentsline {chapter}{Заключение}{37}{chapter*.13}%
-\contentsline {chapter}{Словарь терминов}{62}{chapter*.15}%
-\contentsline {chapter}{Список использованных источников}{63}{chapter*.16}%
-\contentsline {chapter}{Библиографический список}{64}{chapter*.17}%
+\contentsline {chapter}{\chapternumberline {4}Тестирование системы формирования CAPAs на основе изменений репозитория кода}{36}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Введение}{36}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Методика проведения тестирования}{37}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Сравнение моделей классификации}{38}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Модульное тестирование}{41}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Нагрузочное тестирование}{43}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Обзор и интерпретация результатов}{44}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Описание страницы рекомендаций по коммитам}{48}{subsection.4.5.2}%
+\contentsline {section}{\numberline {4.6}Выводы}{49}{section.4.6}%
+\contentsline {chapter}{Заключение}{51}{chapter*.25}%
+\contentsline {chapter}{Словарь терминов}{76}{chapter*.27}%
+\contentsline {chapter}{Список использованных источников}{77}{chapter*.28}%
+\contentsline {chapter}{Библиографический список}{78}{chapter*.29}%
