@@ -52,7 +52,7 @@
 \contentsline {section}{\numberline {4.4}Модульное тестирование}{42}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Мутационное тестирование}{45}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}Итоги прогона}{45}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Что удалось обнаружить мутационным тестированием}{45}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.2}Результат мутационного тестирования}{45}{subsection.4.5.2}%
 \contentsline {section}{\numberline {4.6}Нагрузочное тестирование}{46}{section.4.6}%
 \contentsline {section}{\numberline {4.7}Обзор и интерпретация результатов}{47}{section.4.7}%
 \contentsline {subsection}{\numberline {4.7.1}Описание страницы рекомендаций по коммитам}{51}{subsection.4.7.1}%
