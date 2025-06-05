@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  4 JUN 2025 01:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  5 JUN 2025 12:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4023,7 +4023,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [12.12]
-<my_folder/images/useCase (1).png, id=215, 613.29124pt x 402.50375pt>
+<my_folder/images/useCase (1).png, id=219, 613.29124pt x 402.50375pt>
 File: my_folder/images/useCase (1).png Graphic file (type png)
 <use my_folder/images/useCase (1).png>
 Package pdftex.def Info: my_folder/images/useCase (1).png  used on input line 1
@@ -4085,7 +4085,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [16.16]
-<my_folder/images/architect.png, id=234, 369.38pt x 402.50375pt>
+<my_folder/images/architect.png, id=238, 369.38pt x 402.50375pt>
 File: my_folder/images/architect.png Graphic file (type png)
 <use my_folder/images/architect.png>
 Package pdftex.def Info: my_folder/images/architect.png  used on input line 45.
@@ -4128,7 +4128,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [19.19]
-<my_folder/images/classDiagram.jpg, id=252, 984.80598pt x 804.13098pt>
+<my_folder/images/classDiagram.jpg, id=256, 984.80598pt x 804.13098pt>
 File: my_folder/images/classDiagram.jpg Graphic file (type jpg)
 <use my_folder/images/classDiagram.jpg>
 Package pdftex.def Info: my_folder/images/classDiagram.jpg  used on input line 
@@ -4307,7 +4307,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [32.32]
-<my_folder/images/dashboard.png, id=495, 1284.8pt x 631.35875pt>
+<my_folder/images/dashboard.png, id=499, 1284.8pt x 631.35875pt>
 File: my_folder/images/dashboard.png Graphic file (type png)
 <use my_folder/images/dashboard.png>
 Package pdftex.def Info: my_folder/images/dashboard.png  used on input line 305
@@ -4350,7 +4350,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [35.35]
-<my_folder/images/mermaid.png, id=547, 1148.79187pt x 346.29375pt>
+<my_folder/images/mermaid.png, id=551, 1148.79187pt x 346.29375pt>
 File: my_folder/images/mermaid.png Graphic file (type png)
 <use my_folder/images/mermaid.png>
 Package pdftex.def Info: my_folder/images/mermaid.png  used on input line 404.
@@ -4705,42 +4705,28 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [43.43]
-<my_folder/images/test_result.png, id=601, 394.47375pt x 226.34563pt>
+<my_folder/images/test_result.png, id=605, 394.47375pt x 226.34563pt>
 File: my_folder/images/test_result.png Graphic file (type png)
 <use my_folder/images/test_result.png>
 Package pdftex.def Info: my_folder/images/test_result.png  used on input line 1
-71.
+70.
 (pdftex.def)             Requested size: 483.69687pt x 277.54347pt.
-<my_folder/images/coverage.png, id=602, 224.33812pt x 101.37875pt>
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 171.
+See the caption package documentation for explanation.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 173.
+
+<my_folder/images/coverage.png, id=606, 224.33812pt x 101.37875pt>
 File: my_folder/images/coverage.png Graphic file (type png)
 <use my_folder/images/coverage.png>
-Package pdftex.def Info: my_folder/images/coverage.png  used on input line 178.
+Package pdftex.def Info: my_folder/images/coverage.png  used on input line 177.
 
-(pdftex.def)             Requested size: 483.69687pt x 218.60666pt.
-
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[44.44 <./my_folder/images/test_result.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
-[]\T2A/cmtt/m/n/14.05249 Проверка генерации рекомендаций при специфических усло
-виях.
- []
-
-
-Overfull \hbox (1.37627pt too wide) in paragraph at lines 196--197
-[]\T2A/cmtt/m/n/14.05249 Обработка нестандартных сценариев работы метода predic
-t_proba\T2A/Tempora-TLF/m/n/14.05249 (-20) .
- []
-
+(pdftex.def)             Requested size: 386.95897pt x 174.88625pt.
 
 
 
@@ -4753,7 +4739,19 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[45.45 <./my_folder/images/coverage.png>]
+[44.44 <./my_folder/images/test_result.png> <./my_folder/images/coverage.png>]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[45.45]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4766,29 +4764,17 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [46.46]
-<my_folder/images/nagruzka.png, id=620, 856.19875pt x 416.55624pt>
+<my_folder/images/nagruzka.png, id=628, 856.19875pt x 416.55624pt>
 File: my_folder/images/nagruzka.png Graphic file (type png)
 <use my_folder/images/nagruzka.png>
-Package pdftex.def Info: my_folder/images/nagruzka.png  used on input line 215.
+Package pdftex.def Info: my_folder/images/nagruzka.png  used on input line 264.
 
 (pdftex.def)             Requested size: 483.69687pt x 235.32928pt.
-
-Underfull \hbox (badness 4531) in paragraph at lines 221--222
-[]\T2A/Tempora-TLF/m/n/14.05249 (+20) Визуализация ре^^?зуль^^?та^^?тов ана^^?л
-и^^?за ком^^?ми^^?тов поз^^?во^^?ля^^?ет быст^^?ро
- []
-
-
-Underfull \hbox (badness 1460) in paragraph at lines 221--222
-\T2A/Tempora-TLF/m/n/14.05249 (+20) вы^^?яв^^?лять тен^^?ден^^?ции в про^^?ек^^
-?те. Рас^^?смот^^?рим при^^?мер ре^^?по^^?зи^^?то^^?рия
- []
-
-<my_folder/images/first_page.png, id=622, 1278.7775pt x 475.27562pt>
+<my_folder/images/first_page.png, id=630, 1278.7775pt x 475.27562pt>
 File: my_folder/images/first_page.png Graphic file (type png)
 <use my_folder/images/first_page.png>
-Package pdftex.def Info: my_folder/images/first_page.png  used on input line 22
-7.
+Package pdftex.def Info: my_folder/images/first_page.png  used on input line 27
+6.
 (pdftex.def)             Requested size: 483.69687pt x 179.77261pt.
 
 
@@ -4803,11 +4789,11 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [47.47 <./my_folder/images/nagruzka.png>]
-<my_folder/images/second_page.png, id=631, 1284.29813pt x 611.28375pt>
+<my_folder/images/second_page.png, id=639, 1284.29813pt x 611.28375pt>
 File: my_folder/images/second_page.png Graphic file (type png)
 <use my_folder/images/second_page.png>
 Package pdftex.def Info: my_folder/images/second_page.png  used on input line 2
-35.
+84.
 (pdftex.def)             Requested size: 483.69687pt x 230.21954pt.
 
 
@@ -4822,17 +4808,17 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [48.48 <./my_folder/images/first_page.png>]
-<my_folder/images/third_page.png, id=639, 1284.8pt x 340.77313pt>
+<my_folder/images/third_page.png, id=647, 1284.8pt x 340.77313pt>
 File: my_folder/images/third_page.png Graphic file (type png)
 <use my_folder/images/third_page.png>
-Package pdftex.def Info: my_folder/images/third_page.png  used on input line 24
-4.
+Package pdftex.def Info: my_folder/images/third_page.png  used on input line 29
+3.
 (pdftex.def)             Requested size: 483.69687pt x 128.29398pt.
-<my_folder/images/forth_page.png, id=640, 1284.8pt x 300.62312pt>
+<my_folder/images/forth_page.png, id=648, 1284.8pt x 300.62312pt>
 File: my_folder/images/forth_page.png Graphic file (type png)
 <use my_folder/images/forth_page.png>
-Package pdftex.def Info: my_folder/images/forth_page.png  used on input line 25
-0.
+Package pdftex.def Info: my_folder/images/forth_page.png  used on input line 29
+9.
 (pdftex.def)             Requested size: 483.69687pt x 113.17833pt.
 
 
@@ -4848,11 +4834,11 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 
 [49.49 <./my_folder/images/second_page.png> <./my_folder/images/third_page.png>
 ]
-<my_folder/images/fifth_page.png, id=652, 1284.8pt x 341.77687pt>
+<my_folder/images/fifth_page.png, id=660, 1284.8pt x 341.77687pt>
 File: my_folder/images/fifth_page.png Graphic file (type png)
 <use my_folder/images/fifth_page.png>
-Package pdftex.def Info: my_folder/images/fifth_page.png  used on input line 26
-6.
+Package pdftex.def Info: my_folder/images/fifth_page.png  used on input line 31
+5.
 (pdftex.def)             Requested size: 483.69687pt x 128.67188pt.
 
 
@@ -4867,10 +4853,10 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [50.50 <./my_folder/images/forth_page.png> <./my_folder/images/fifth_page.png>]
-<my_folder/images/capa_page.png, id=660, 1284.8pt x 352.31625pt>
+<my_folder/images/capa_page.png, id=668, 1284.8pt x 352.31625pt>
 File: my_folder/images/capa_page.png Graphic file (type png)
 <use my_folder/images/capa_page.png>
-Package pdftex.def Info: my_folder/images/capa_page.png  used on input line 279
+Package pdftex.def Info: my_folder/images/capa_page.png  used on input line 328
 .
 (pdftex.def)             Requested size: 483.69687pt x 132.63972pt.
 
@@ -4886,12 +4872,6 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [51.51 <./my_folder/images/capa_page.png>]
-Underfull \hbox (badness 1558) in paragraph at lines 321--322
-[]\T2A/Tempora-TLF/m/n/14.05249 (+20) Наибольшее вли^^?я^^?ние на риск ока^^?за
-^^?ли при^^?зна^^?ки:
- []
-
-
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4928,74 +4908,74 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [54.54]
-Underfull \hbox (badness 10000) in paragraph at lines 404--404
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
 []|\T2A/Tempora-TLF/m/n/12 (+20) 6aa0ac9,
  []
 
 
-Underfull \hbox (badness 1824) in paragraph at lines 404--404
+Underfull \hbox (badness 1824) in paragraph at lines 453--453
 \T2A/Tempora-TLF/m/n/12 (+20) ний (на^^?при^^?мер, squash или fast-^^?
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--404
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
 []|\T2A/Tempora-TLF/m/n/12 (+20) ca6655a,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--404
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
 []|\T2A/Tempora-TLF/m/n/12 (+20) 6ad7d36,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--404
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
 []|\T2A/Tempora-TLF/m/n/12 (+20) ca6655a,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--404
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
 []|\T2A/Tempora-TLF/m/n/12 (+20) 6ad7d36,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--404
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
 []|\T2A/Tempora-TLF/m/n/12 (+20) 4e5660e,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--404
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
 []|\T2A/Tempora-TLF/m/n/12 (+20) 196baa7,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--404
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
 []|\T2A/Tempora-TLF/m/n/12 (+20) 05caf51,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--404
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
 []|\T2A/Tempora-TLF/m/n/12 (+20) 7404e85,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--404
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
 []|\T2A/Tempora-TLF/m/n/12 (+20) 250fab4,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--404
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
 []|\T2A/Tempora-TLF/m/n/12 (+20) 7b707df,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--404
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
 []|\T2A/Tempora-TLF/m/n/12 (+20) Несоответствие фор^^?ма^^?ти^^?ро^^?ва^^?ния
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
+)
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -5019,7 +4999,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[56.56]) (./my_folder/conclusion.tex
+[56.56] (./my_folder/conclusion.tex
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -5319,7 +5299,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[81.81]
+[81.81]) (./my_folder/acronyms.tex) (./my_folder/dictionary.tex
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -5331,19 +5311,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[82.82]) (./my_folder/acronyms.tex) (./my_folder/dictionary.tex
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[83.83]) (./my_folder/references.tex
+[82.82]) (./my_folder/references.tex
 
 LaTeX Warning: Empty bibliography on input line 1.
 
@@ -5359,7 +5327,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[84.84]
+[83.83]
 bibitemlist
 
 
@@ -5373,28 +5341,16 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[85.85]
+[84.84]
 Underfull \hbox (badness 10000) in paragraph at lines 63--65
-\T2A/Tempora-TLF/m/n/14.05249 (+20) gov / inspections-[]compliance-[]enforcemen
-t-[]and-[]criminal-[]investigations /
+\T2A/Tempora-TLF/m/n/14.05249 (+20) fda . gov / inspections-[]compliance-[]enfo
+rcement-[]and-[]criminal-[]investigations /
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 72--75
-\T2A/Tempora-TLF/m/n/14.05249 (+20) depending _ on _ PICO _ frame _ work _ rela
-ted _ to _ operating _ system _ can _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--75
-\T2A/Tempora-TLF/m/n/14.05249 (+20) anyone _ suggest _ me / attachment / 64ef8b
-7e806fe2503d067dd1 / AS %
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--75
-\T2A/Tempora-TLF/m/n/14.05249 (+20) 3A11431281184732300 % 401693420414326 / dow
-nload / Heri % C4 %
+\T2A/Tempora-TLF/m/n/14.05249 (+20) net / pro^^\le / Samesun-[]Singh / post / I
+ _ need _ a _ question _ depending _ on _ PICO _
  []
 
 )
@@ -5418,7 +5374,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[86.86] (./my_folder/appendix1.tex) (./my_folder/appendix2.tex)
+[85.85] (./my_folder/appendix1.tex) (./my_folder/appendix2.tex)
 
 Class memoir Warning: The material used in the footer is too large
 (12.64719pt) for the given foot skip (0.0pt), it is recommended to
@@ -5433,22 +5389,11 @@ See the caption package documentation for explanation.
 Package caption Warning: Unused \captionsetup[ListingEnv] on input line 238.
 See the caption package documentation for explanation.
 
-No complaints by nag.
+
+Package nag Warning: 1 complaints in total.
+
 \tf@toc=\write8
 \openout8 = `My_thesis.toc'.
-
-
-! LaTeX Error: \begin{itemize} on input line 190 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.85 \end{document}
-                    % РєРѕРЅРµС† РґРѕРєСѓРјРµРЅС‚Р°
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
 
 (./My_thesis.aux
 Package cleveref Info: loaded `russian' language definitions on input line 12.
@@ -5462,7 +5407,7 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `My_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9FDA01DDECA9672722FC6B6EA84F63ED;4631.
+(rerunfilecheck)             Checksum: AB4122D92FD9F9A51B2E74CAE3AF2CD2;4631.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                My_thesis
@@ -5471,33 +5416,29 @@ Package biblatex Warning: Please (re)run Biber on the file:
 Package logreq Info: Writing requests to 'My_thesis.run.xml'.
 \openout1 = `My_thesis.run.xml'.
 
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 190 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 50202 strings out of 473330
- 872143 string characters out of 5723877
- 2442796 words of memory out of 5000000
- 70917 multiletter control sequences out of 15000+600000
- 658292 words of font info for 255 fonts, out of 8000000 for 9000
+ 50221 strings out of 473330
+ 872566 string characters out of 5723877
+ 2429789 words of memory out of 5000000
+ 70915 multiletter control sequences out of 15000+600000
+ 659785 words of font info for 264 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,19n,123p,3531b,3221s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pf
-b><c:/texlive/2024/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb><c:/t
-exlive/2024/texmf-dist/fonts/type1/public/tempora/Tempora-BoldItalic.pfb><c:/te
-xlive/2024/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb><c:/texlive
-/2024/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb><c:/texlive/202
-4/texmf-dist/fonts/type1/public/cm-super/sfit1200.pfb><c:/texlive/2024/texmf-di
-st/fonts/type1/public/cm-super/sftt1200.pfb><c:/texlive/2024/texmf-dist/fonts/t
-ype1/public/cm-super/sftt1440.pfb><c:/texlive/2024/texmf-dist/fonts/type1/publi
-c/newtx/txmiaX.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/newtx/txsym.p
-fb><c:/texlive/2024/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on My_thesis.pdf (86 pages, 2438129 bytes).
+<c:/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><c:/texlive/
+2024/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb><c:/texlive/2024/te
+xmf-dist/fonts/type1/public/tempora/Tempora-BoldItalic.pfb><c:/texlive/2024/tex
+mf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb><c:/texlive/2024/texmf-di
+st/fonts/type1/public/tempora/Tempora-Regular.pfb><c:/texlive/2024/texmf-dist/f
+onts/type1/public/cm-super/sfit1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1
+/public/cm-super/sftt1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm
+-super/sftt1440.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/newtx/txmiaX
+.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/newtx/txsym.pfb><c:/texlive
+/2024/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
+Output written on My_thesis.pdf (85 pages, 2430839 bytes).
 PDF statistics:
- 2102 PDF objects out of 2487 (max. 8388607)
- 1947 compressed objects within 20 object streams
- 1316 named destinations out of 1440 (max. 500000)
- 46759 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 2105 PDF objects out of 2487 (max. 8388607)
+ 1951 compressed objects within 20 object streams
+ 1321 named destinations out of 1440 (max. 500000)
+ 48807 words of extra memory for PDF output out of 51595 (max. 10000000)
 

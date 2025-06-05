@@ -50,16 +50,18 @@
 \contentsline {section}{\numberline {4.2}Методика проведения тестирования}{38}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Сравнение моделей классификации}{40}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Модульное тестирование}{42}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Опыт написания мутационных тестов}{44}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Мутационное тестирование}{45}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Итоги прогона}{45}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Что удалось обнаружить мутационным тестированием}{45}{subsection.4.5.2}%
 \contentsline {section}{\numberline {4.6}Нагрузочное тестирование}{46}{section.4.6}%
 \contentsline {section}{\numberline {4.7}Обзор и интерпретация результатов}{47}{section.4.7}%
 \contentsline {subsection}{\numberline {4.7.1}Описание страницы рекомендаций по коммитам}{51}{subsection.4.7.1}%
-\contentsline {section}{\numberline {4.8}Сравнение экспертных меток и рекомендаций, выданных моделью}{53}{section.4.8}%
+\contentsline {section}{\numberline {4.8}Сравнение экспертных меток и рекомендаций, выданных моделью}{52}{section.4.8}%
 \contentsline {subsection}{\numberline {4.8.1}Рекомендации экспертов}{53}{subsection.4.8.1}%
 \contentsline {subsection}{\numberline {4.8.2}Рекомендации модели}{54}{subsection.4.8.2}%
 \contentsline {subsection}{\numberline {4.8.3}Сравнение рекомендаций экспертов и модели}{55}{subsection.4.8.3}%
-\contentsline {section}{\numberline {4.9}Выводы}{57}{section.4.9}%
-\contentsline {chapter}{Заключение}{58}{chapter*.25}%
-\contentsline {chapter}{Словарь терминов}{84}{chapter*.27}%
-\contentsline {chapter}{Список использованных источников}{84}{chapter*.27}%
-\contentsline {chapter}{Библиографический список}{85}{chapter*.28}%
+\contentsline {section}{\numberline {4.9}Выводы}{55}{section.4.9}%
+\contentsline {chapter}{Заключение}{58}{chapter*.24}%
+\contentsline {chapter}{Словарь терминов}{83}{chapter*.26}%
+\contentsline {chapter}{Список использованных источников}{83}{chapter*.26}%
+\contentsline {chapter}{Библиографический список}{84}{chapter*.27}%
