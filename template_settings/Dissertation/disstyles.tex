@@ -104,6 +104,7 @@
 
 %% отступы %%
 \makeatletter
+\renewcommand{\cftchapterfont}{\normalfont\MakeUppercase}
 \renewcommand{\cftchapterbreak}{}        % set a page break before rather than after the entry
 %\renewcommand{\cftparskip}{10em} % эта настройка не работает, вместо неё изменен \parskip непостредственно перед \tableofcontents
 \setlength{\cftbeforechapterskip}{0pt plus 0pt} %delete skip after chapter block (last section) %%%<-SPbPU pure
@@ -117,7 +118,7 @@
 
 \ifnumgreater{\value{headingdelim}}{0}{%
 	%<- SPbPU точка после номера страницы
-	\renewcommand\cftchapteraftersnum{.\space}       % добавляет точку с пробелом после номера раздела в оглавлении
+	\renewcommand\cftchapteraftersnum{\space}       % добавляет точку с пробелом после номера раздела в оглавлении
 	%\renewcommand\cftchapteraftersnumb{\enspace\textperiodcentered\enspace} %\enspace - настоящий пробел, \space не работает
 	%\renewcommand\chapternumberlinebox[2]{#2}
 }{}
@@ -329,7 +330,7 @@
 
 \ifnumequal{\value{chapstyle}}{1}{%
     \chapterstyle{SPbPUstylechapname}
-    \renewcommand*{\cftchaptername}{Глава\space} % будет вписано слово Глава перед каждым номером раздела в оглавлении
+    \renewcommand*{\cftchaptername}{\space} % будет вписано слово Глава перед каждым номером раздела в оглавлении
 }{}% вместо Chapter \chaptername
 
 %%% Интервалы между заголовками

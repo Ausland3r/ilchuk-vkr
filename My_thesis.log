@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  6 JUN 2025 03:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  6 JUN 2025 17:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3640,9 +3640,6 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 [4.4
 
 {c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
-(Font)              scaled to size 14.05249pt on input line 43.
-
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3724,7 +3721,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[10.10]) (./my_folder/introduction.tex)
+[10.10]) (./my_folder/introduction.tex
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3738,7 +3735,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 
 [11.11
 
-] (./my_folder/chapter1.tex
+]) (./my_folder/chapter1.tex
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4023,7 +4020,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [19.19]
-<my_folder/images/useCase (1).png, id=335, 613.29124pt x 402.50375pt>
+<my_folder/images/useCase (1).png, id=334, 613.29124pt x 402.50375pt>
 File: my_folder/images/useCase (1).png Graphic file (type png)
 <use my_folder/images/useCase (1).png>
 Package pdftex.def Info: my_folder/images/useCase (1).png  used on input line 1
@@ -4088,7 +4085,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [23.23]
-<my_folder/images/idef0.png, id=357, 451.18562pt x 239.89626pt>
+<my_folder/images/idef0.png, id=356, 451.18562pt x 239.89626pt>
 File: my_folder/images/idef0.png Graphic file (type png)
 <use my_folder/images/idef0.png>
 Package pdftex.def Info: my_folder/images/idef0.png  used on input line 45.
@@ -4118,7 +4115,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [25.25]
-<my_folder/images/classDiagram.jpg, id=371, 984.80598pt x 804.13098pt>
+<my_folder/images/classDiagram.jpg, id=370, 984.80598pt x 804.13098pt>
 File: my_folder/images/classDiagram.jpg Graphic file (type jpg)
 <use my_folder/images/classDiagram.jpg>
 Package pdftex.def Info: my_folder/images/classDiagram.jpg  used on input line 
@@ -4149,7 +4146,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [27.27 <./my_folder/images/classDiagram.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 4193) in paragraph at lines 127--128
 []\T2A/Tempora-TLF/m/n/14.05249 (+20) init(classifier: ClassifierMixin, feature
 s: List<str]=None, cluster_model:
  []
@@ -4246,6 +4243,9 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [34.34]
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
+(Font)              scaled to size 14.05249pt on input line 165.
+
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4282,7 +4282,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [37.37]
-Overfull \hbox (13.876pt too wide) in paragraph at lines 262--263
+Overfull \hbox (34.95474pt too wide) in paragraph at lines 262--263
 []\T2A/Tempora-TLF/m/n/14.05249 (-20) Для по^^?вы^^?ше^^?ния до^^?ве^^?рия к пр
 ед^^?ска^^?за^^?ни^^?ям ре^^?а^^?ли^^?зо^^?ван ме^^?тод \T2A/cmtt/m/n/14.05249 
 feature_importances()\T2A/Tempora-TLF/m/n/14.05249 (-20) ,
@@ -4379,10 +4379,10 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [43.43 <./my_folder/images/mermaid.png>]
-Overfull \hbox (25.57884pt too wide) in paragraph at lines 16--19
-\T2A/Tempora-TLF/m/n/14.05249 (-20) ма^^?шин^^?но^^?го обу^^?че^^?ния. Те^^?сты
-, та^^?кие как [][]\T2A/cmtt/m/n/14.05249 test_model_extremes_and_balanced_case
-s
+Overfull \hbox (68.85799pt too wide) in paragraph at lines 16--19
+\T2A/Tempora-TLF/m/n/14.05249 (-20) лей ма^^?шин^^?но^^?го обу^^?че^^?ния. Те^^
+?сты, та^^?кие как [][]\T2A/cmtt/m/n/14.05249 test_model_extremes_and_balanced_
+cases
  []
 
 
@@ -4411,10 +4411,23 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[45.45]
+
 Package nag Warning: `center' environment in figure.
 (nag)                Maybe you want \centering instead on input line 45.
 
-<my_folder/images/coverage.png, id=696, 224.33812pt x 101.37875pt>
+<my_folder/images/coverage.png, id=700, 224.33812pt x 101.37875pt>
 File: my_folder/images/coverage.png Graphic file (type png)
 <use my_folder/images/coverage.png>
 Package pdftex.def Info: my_folder/images/coverage.png  used on input line 49.
@@ -4431,19 +4444,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[45.45 <./my_folder/images/test_result.png>]
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[46.46 <./my_folder/images/coverage.png>]
+[46.46 <./my_folder/images/test_result.png> <./my_folder/images/coverage.png>]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4456,30 +4457,42 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [47.47]
-<my_folder/images/nagruzka.png, id=716, 856.19875pt x 416.55624pt>
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[48.48]
+<my_folder/images/nagruzka.png, id=721, 856.19875pt x 416.55624pt>
 File: my_folder/images/nagruzka.png Graphic file (type png)
 <use my_folder/images/nagruzka.png>
 Package pdftex.def Info: my_folder/images/nagruzka.png  used on input line 153.
 
 (pdftex.def)             Requested size: 483.69687pt x 235.32928pt.
 
-Underfull \hbox (badness 2334) in paragraph at lines 159--160
+Underfull \hbox (badness 3323) in paragraph at lines 159--160
 []\T2A/Tempora-TLF/m/n/14.05249 (+20) Для про^^?вер^^?ки си^^?сте^^?мы бы^^?ло 
-вы^^?бра^^?но несколь^^?ко те^^?сто^^?вых ре^^?по^^?зи^^?то^^?ри^^?
+вы^^?бра^^?но несколь^^?ко те^^?сто^^?вых ре^^?по^^?зи^^?
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 159--160
-\T2A/Tempora-TLF/m/n/14.05249 (+20) ев с соб^^?ствен^^?ны^^?ми раз^^?ра^^?бот^^
-?ка^^?ми: \T2A/cmtt/m/n/14.05249 Tq\T2A/Tempora-TLF/m/n/14.05249 (+20) , \T2A/c
-mtt/m/n/14.05249 scherBook\T2A/Tempora-TLF/m/n/14.05249 (+20) , \T2A/cmtt/m/n/1
-4.05249 NTO2024-2025\T2A/Tempora-TLF/m/n/14.05249 (+20) , а так^^?
+Underfull \hbox (badness 2318) in paragraph at lines 159--160
+\T2A/Tempora-TLF/m/n/14.05249 (+20) то^^?ри^^?ев с соб^^?ствен^^?ны^^?ми раз^^?
+ра^^?бот^^?ка^^?ми: \T2A/cmtt/m/n/14.05249 Tq\T2A/Tempora-TLF/m/n/14.05249 (+20
+) , \T2A/cmtt/m/n/14.05249 scherBook\T2A/Tempora-TLF/m/n/14.05249 (+20) , \T2A/
+cmtt/m/n/14.05249 NTO2024-2025\T2A/Tempora-TLF/m/n/14.05249 (+20) , а
  []
 
 
-Underfull \hbox (badness 4846) in paragraph at lines 159--160
-\T2A/Tempora-TLF/m/n/14.05249 (+20) же ре^^?по^^?зи^^?то^^?рии предо^^?став^^?л
-ен^^?ные сто^^?рон^^?ни^^?ми раз^^?ра^^?бот^^?чи^^?ка^^?ми и сту^^?
+Underfull \hbox (badness 1502) in paragraph at lines 159--160
+\T2A/Tempora-TLF/m/n/14.05249 (+20) так^^?же ре^^?по^^?зи^^?то^^?рии предо^^?ст
+ав^^?лен^^?ные сто^^?рон^^?ни^^?ми раз^^?ра^^?бот^^?чи^^?ка^^?ми и сту^^?
  []
 
 
@@ -4515,7 +4528,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[48.48]
+[49.49 <./my_folder/images/nagruzka.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 165--165
 []|\T2A/Tempora-TLF/b/n/14.05249 (+20) Кол-во
  []
@@ -4710,21 +4723,9 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[49.49 <./my_folder/images/nagruzka.png>]
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
 [50.50]
-Underfull \hbox (badness 1454) in paragraph at lines 219--220
-\T2A/Tempora-TLF/m/n/14.05249 (+20) Он предо^^?став^^?ля^^?ет еди^^?ный ин^^?те
-р^^?фейс к раз^^?лич^^?ным клас^^?си^^?фи^^?ка^^?то^^?рам из
- []
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
@@ -4739,13 +4740,6 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [51.51]
-<my_folder/images/first_page.png, id=742, 1278.7775pt x 475.27562pt>
-File: my_folder/images/first_page.png Graphic file (type png)
-<use my_folder/images/first_page.png>
-Package pdftex.def Info: my_folder/images/first_page.png  used on input line 25
-8.
-(pdftex.def)             Requested size: 483.69687pt x 179.77261pt.
-
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4758,7 +4752,13 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [52.52]
-<my_folder/images/second_page.png, id=749, 1284.29813pt x 611.28375pt>
+<my_folder/images/first_page.png, id=746, 1278.7775pt x 475.27562pt>
+File: my_folder/images/first_page.png Graphic file (type png)
+<use my_folder/images/first_page.png>
+Package pdftex.def Info: my_folder/images/first_page.png  used on input line 25
+8.
+(pdftex.def)             Requested size: 483.69687pt x 179.77261pt.
+<my_folder/images/second_page.png, id=748, 1284.29813pt x 611.28375pt>
 File: my_folder/images/second_page.png Graphic file (type png)
 <use my_folder/images/second_page.png>
 Package pdftex.def Info: my_folder/images/second_page.png  used on input line 2
@@ -5439,11 +5439,11 @@ Package logreq Info: Writing requests to 'My_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50075 strings out of 473330
- 869511 string characters out of 5723877
- 2435625 words of memory out of 5000000
- 70701 multiletter control sequences out of 15000+600000
- 659209 words of font info for 261 fonts, out of 8000000 for 9000
+ 50076 strings out of 473330
+ 869514 string characters out of 5723877
+ 2435726 words of memory out of 5000000
+ 70704 multiletter control sequences out of 15000+600000
+ 658816 words of font info for 260 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,19n,123p,3531b,3221s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><c:/texlive/
@@ -5456,10 +5456,10 @@ onts/type1/public/cm-super/sfit1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1
 -super/sftt1440.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/newtx/txmiaX
 .pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/newtx/txsym.pfb><c:/texlive
 /2024/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on My_thesis.pdf (95 pages, 2459301 bytes).
+Output written on My_thesis.pdf (95 pages, 2458666 bytes).
 PDF statistics:
- 2256 PDF objects out of 2487 (max. 8388607)
- 2091 compressed objects within 21 object streams
- 1385 named destinations out of 1440 (max. 500000)
+ 2259 PDF objects out of 2487 (max. 8388607)
+ 2094 compressed objects within 21 object streams
+ 1386 named destinations out of 1440 (max. 500000)
  48823 words of extra memory for PDF output out of 51595 (max. 10000000)
 
