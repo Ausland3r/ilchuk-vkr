@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  6 JUN 2025 17:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  6 JUN 2025 17:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4038,8 +4038,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[20.20 <./my_folder/images/useCase (1).png (PNG copy)>])
-(./my_folder/chapter2.tex
+[20.20 <./my_folder/images/useCase (1).png>]) (./my_folder/chapter2.tex
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4085,7 +4084,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [23.23]
-<my_folder/images/idef0.png, id=356, 451.18562pt x 239.89626pt>
+<my_folder/images/idef0.png, id=358, 451.18562pt x 239.89626pt>
 File: my_folder/images/idef0.png Graphic file (type png)
 <use my_folder/images/idef0.png>
 Package pdftex.def Info: my_folder/images/idef0.png  used on input line 45.
@@ -4115,7 +4114,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [25.25]
-<my_folder/images/classDiagram.jpg, id=370, 984.80598pt x 804.13098pt>
+<my_folder/images/classDiagram.jpg, id=371, 984.80598pt x 804.13098pt>
 File: my_folder/images/classDiagram.jpg Graphic file (type jpg)
 <use my_folder/images/classDiagram.jpg>
 Package pdftex.def Info: my_folder/images/classDiagram.jpg  used on input line 
@@ -4301,7 +4300,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [38.38]
-<my_folder/images/dashboard.png, id=613, 1284.8pt x 631.35875pt>
+<my_folder/images/dashboard.png, id=614, 1284.8pt x 631.35875pt>
 File: my_folder/images/dashboard.png Graphic file (type png)
 <use my_folder/images/dashboard.png>
 Package pdftex.def Info: my_folder/images/dashboard.png  used on input line 305
@@ -4344,7 +4343,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [41.41]
-<my_folder/images/mermaid.png, id=665, 1148.79187pt x 346.29375pt>
+<my_folder/images/mermaid.png, id=666, 1148.79187pt x 346.29375pt>
 File: my_folder/images/mermaid.png Graphic file (type png)
 <use my_folder/images/mermaid.png>
 Package pdftex.def Info: my_folder/images/mermaid.png  used on input line 404.
@@ -4398,7 +4397,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [44.44]
-<my_folder/images/test_result.png, id=695, 394.47375pt x 226.34563pt>
+<my_folder/images/test_result.png, id=696, 394.47375pt x 226.34563pt>
 File: my_folder/images/test_result.png Graphic file (type png)
 <use my_folder/images/test_result.png>
 Package pdftex.def Info: my_folder/images/test_result.png  used on input line 4
@@ -4427,7 +4426,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 Package nag Warning: `center' environment in figure.
 (nag)                Maybe you want \centering instead on input line 45.
 
-<my_folder/images/coverage.png, id=700, 224.33812pt x 101.37875pt>
+<my_folder/images/coverage.png, id=701, 224.33812pt x 101.37875pt>
 File: my_folder/images/coverage.png Graphic file (type png)
 <use my_folder/images/coverage.png>
 Package pdftex.def Info: my_folder/images/coverage.png  used on input line 49.
@@ -4469,7 +4468,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [48.48]
-<my_folder/images/nagruzka.png, id=721, 856.19875pt x 416.55624pt>
+<my_folder/images/nagruzka.png, id=722, 856.19875pt x 416.55624pt>
 File: my_folder/images/nagruzka.png Graphic file (type png)
 <use my_folder/images/nagruzka.png>
 Package pdftex.def Info: my_folder/images/nagruzka.png  used on input line 153.
@@ -4752,13 +4751,13 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [52.52]
-<my_folder/images/first_page.png, id=746, 1278.7775pt x 475.27562pt>
+<my_folder/images/first_page.png, id=747, 1278.7775pt x 475.27562pt>
 File: my_folder/images/first_page.png Graphic file (type png)
 <use my_folder/images/first_page.png>
 Package pdftex.def Info: my_folder/images/first_page.png  used on input line 25
 8.
 (pdftex.def)             Requested size: 483.69687pt x 179.77261pt.
-<my_folder/images/second_page.png, id=748, 1284.29813pt x 611.28375pt>
+<my_folder/images/second_page.png, id=749, 1284.29813pt x 611.28375pt>
 File: my_folder/images/second_page.png Graphic file (type png)
 <use my_folder/images/second_page.png>
 Package pdftex.def Info: my_folder/images/second_page.png  used on input line 2
@@ -4777,13 +4776,13 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [53.53 <./my_folder/images/first_page.png>]
-<my_folder/images/third_page.png, id=757, 1284.8pt x 340.77313pt>
+<my_folder/images/third_page.png, id=758, 1284.8pt x 340.77313pt>
 File: my_folder/images/third_page.png Graphic file (type png)
 <use my_folder/images/third_page.png>
 Package pdftex.def Info: my_folder/images/third_page.png  used on input line 27
 5.
 (pdftex.def)             Requested size: 483.69687pt x 128.29398pt.
-<my_folder/images/forth_page.png, id=758, 1284.8pt x 300.62312pt>
+<my_folder/images/forth_page.png, id=759, 1284.8pt x 300.62312pt>
 File: my_folder/images/forth_page.png Graphic file (type png)
 <use my_folder/images/forth_page.png>
 Package pdftex.def Info: my_folder/images/forth_page.png  used on input line 28
@@ -4803,7 +4802,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 
 [54.54 <./my_folder/images/second_page.png> <./my_folder/images/third_page.png>
 ]
-<my_folder/images/fifth_page.png, id=769, 1284.8pt x 341.77687pt>
+<my_folder/images/fifth_page.png, id=770, 1284.8pt x 341.77687pt>
 File: my_folder/images/fifth_page.png Graphic file (type png)
 <use my_folder/images/fifth_page.png>
 Package pdftex.def Info: my_folder/images/fifth_page.png  used on input line 29
@@ -4822,7 +4821,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [55.55 <./my_folder/images/forth_page.png> <./my_folder/images/fifth_page.png>]
-<my_folder/images/capa_page.png, id=778, 1284.8pt x 352.31625pt>
+<my_folder/images/capa_page.png, id=779, 1284.8pt x 352.31625pt>
 File: my_folder/images/capa_page.png Graphic file (type png)
 <use my_folder/images/capa_page.png>
 Package pdftex.def Info: my_folder/images/capa_page.png  used on input line 310
@@ -5456,9 +5455,9 @@ onts/type1/public/cm-super/sfit1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1
 -super/sftt1440.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/newtx/txmiaX
 .pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/newtx/txsym.pfb><c:/texlive
 /2024/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on My_thesis.pdf (95 pages, 2458666 bytes).
+Output written on My_thesis.pdf (95 pages, 2449229 bytes).
 PDF statistics:
- 2259 PDF objects out of 2487 (max. 8388607)
+ 2260 PDF objects out of 2487 (max. 8388607)
  2094 compressed objects within 21 object streams
  1386 named destinations out of 1440 (max. 500000)
  48823 words of extra memory for PDF output out of 51595 (max. 10000000)
