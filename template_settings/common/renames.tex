@@ -97,10 +97,56 @@
 %- область применения результатов ВКР;
 %- выводы.
 
-\newcommand{\abstractRu}{} % ВВЕДИТЕ текст аннотации по-русски
+\newcommand{\abstractRu}{Объект исследования – процесс автоматизированного анализа истории коммитов в Git-репозиториях с целью выявления «рисковых» изменений и генерации корректирующих и предупреждающих рекомендаций. 
+	
+Предмет исследования – методы извлечения и обработки метрик коммитов, алгоритмы кластеризации и классификации «рисковых» изменений, а также подходы к формированию рекомендаций CAPA и их визуализации.
+	
+	Цель работы – разработать модульную систему, способную автоматически собирать данные о коммитах из удалённых и локальных репозиториев, проводить статический анализ, обучать модель машинного обучения для предсказания риска коммита и формировать для каждого потенциально «рискового» изменения набор рекомендаций CAPA.
+	
+	В работе выполнены следующие основные этапы:
+\begin{enumerate}
+	\item Сбор и подготовка данных. Реализован класс \texttt{GitHubRepoAnalyzer}, который через GitHub API или локальный клон последовательно извлекает историю коммитов, собирает базовые метрики (число добавленных/удалённых строк, число изменённых файлов, время между коммитами) и дополняет их результатами статических анализаторов (\texttt{pylint}, \texttt{Bandit}, \texttt{ESLint}, \texttt{Checkstyle}).
+	\item Генерация псевдометок и классификация. Для автоматической разметки выполнена кластеризация методом \texttt{KMeans}, разделяющая коммиты на «нормальные» и «аномальные» по признакам объёма и качества кода. На основе полученных меток обучается модель, обёрнутая в универсальный класс \texttt{CommitRiskModel}, позволяющий тестировать различные классификаторы (\texttt{LogisticRegression}, \texttt{RandomForest}, \texttt{SVM}, \texttt{LightGBM}, \texttt{DeepForest} и др.) без изменения кода. Модель предсказывает вероятность «рискового» коммита и вычисляет важность признаков.
+	\item Формирование рекомендаций CAPA. На основании вероятности риска и значений ключевых признаков (\texttt{lines\_added}, \texttt{lines\_deleted}, число статических предупреждений) формируется набор текстовых рекомендаций. При превышении пороговых значений формируются предупреждающие сообщения и рекомендации по доработке (добавление тестов, рефакторинг, дополнительная проверка кода). Система автоматически создаёт Pull Request с файлом в формате Markdown, содержащим CAPA-рекомендации.
+	\item Визуализация. Разработан интерактивный дашборд на \texttt{Dash} + \texttt{Plotly}, включающий разделы:
+	\begin{itemize}
+		\item распределение метрик коммитов (\texttt{lines\_added}, \texttt{lines\_deleted}, число файлов),
+		\item анализ риска (распределение коммитов по вероятностям, важность признаков),
+		\item активность авторов (графики среднего риска по каждому разработчику),
+		\item таблица коммитов с рекомендациями CAPA и возможностью фильтрации по проекту, автору и дате.
+	\end{itemize}
+\end{enumerate}
+	
+	В качестве тестовых примеров использовались несколько реальных учебных и рабочих репозиториев. Проведено сравнительное тестирование классификаторов на основе метрик Precision, Recall, F1-score и ROC-AUC; для каждого проекта определены оптимальные алгоритмы.  
+	
+	Система автоматизирует полный цикл анализа коммитов и выдачи рекомендаций CAPA, сокращая время обратной связи, улучшая качество кода и снижая число «рисковых» изменений.}% ВВЕДИТЕ текст аннотации по-русски
 %%
 %%
-\newcommand{\abstractEn}{} % ВВЕДИТЕ текст аннотации по-английски
+\newcommand{\abstractEn}{
+	The object of research is the process of automated analysis of commit history in Git repositories to identify “risky” changes and generate corrective and preventive actions.
+	
+	The subject of research includes methods for extracting and processing commit metrics, clustering and classification algorithms for “risky” changes, as well as approaches to forming CAPA recommendations and their visualization.
+	
+	The aim of this work is to develop a modular system capable of automatically collecting commit data from remote and local repositories, performing static analysis, training a machine learning model to predict commit risk, and generating a set of CAPA recommendations for each potentially “risky” change.
+	
+	The main stages completed in this work are as follows:
+	\begin{enumerate}
+		\item Data Collection and Preparation. The \texttt{GitHubRepoAnalyzer} class was implemented, which uses the GitHub API or a local clone to sequentially retrieve commit history, gather basic metrics (number of lines added/deleted, number of files changed, time between commits), and augment them with results from static analyzers (\texttt{pylint}, \texttt{Bandit}, \texttt{ESLint}, \texttt{Checkstyle}).
+		\item Pseudo-Label Generation and Classification. For automated labeling, clustering with the \texttt{KMeans} algorithm was performed, splitting commits into “normal” and “anomalous” based on code volume and quality metrics. On the basis of these pseudo-labels, a model is trained using the universal \texttt{CommitRiskModel} class, which allows testing various classifiers (\texttt{LogisticRegression}, \texttt{RandomForest}, \texttt{SVM}, \texttt{LightGBM}, \texttt{DeepForest}, etc.) without modifying the code. The model predicts the probability of a commit being “risky” and calculates feature importances.
+		\item CAPA Recommendation Generation. Based on the predicted risk probability and key feature values (\texttt{lines\_added}, \texttt{lines\_deleted}, number of static warnings), a set of textual recommendations is formed. When threshold values are exceeded, warning messages and improvement suggestions are generated (adding tests, refactoring, additional code review). The system automatically creates a Pull Request with a Markdown file containing the CAPA recommendations.
+		\item Visualization. An interactive dashboard was developed using \texttt{Dash} + \texttt{Plotly}, which includes:
+		\begin{itemize}
+			\item distribution of commit metrics (\texttt{lines\_added}, \texttt{lines\_deleted}, number of files),
+			\item risk analysis (distribution of commits by probability, feature importance),
+			\item author activity (average risk charts per developer),
+			\item a commit table with CAPA recommendations and filtering options by project, author, and date.
+		\end{itemize}
+	\end{enumerate}
+	
+	Several real educational and work repositories were used as test examples. Comparative testing of classifiers was conducted using Precision, Recall, F1-score, and ROC-AUC metrics; optimal algorithms were identified for each project.
+	
+	The system automates the full cycle of commit analysis and CAPA recommendation generation, reducing feedback time, improving code quality, and decreasing the number of “risky” changes.
+} % ВВЕДИТЕ текст аннотации по-английски
 
 
 %%% РАЗДЕЛ ДЛЯ ОФОРМЛЕНИЯ ПРАКТИКИ

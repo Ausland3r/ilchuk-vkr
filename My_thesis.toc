@@ -1,67 +1,73 @@
 \changetocdepth {2}
 \babel@toc {russian}{}\relax 
-\contentsline {chapter}{Введение}{4}{chapter*.2}%
-\contentsline {chapter}{\chapternumberline {1}Исследование методов и средств формирования CAPAs на основе изменений репозитория кода}{6}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Современные подходы к формированию CAPA на основе анализа репозиториев кода}{6}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Системы управления CAPA и интеграция в процессы разработки}{6}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Методы анализа коммитов и обучение на данных репозиториев}{7}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Предсказание дефектных коммитов}{7}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Классификация коммитов по типам работ (Commit Classification)}{8}{subsection.1.3.2}%
-\contentsline {section}{\numberline {1.4}Инструменты и системы автоматизации CAPA}{9}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Диаграмма вариантов использования}{13}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Выводы}{13}{section.1.6}%
-\contentsline {chapter}{\chapternumberline {2}Проектирование системы формирования CAPAs на основе изменений репозитория кода}{14}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Требования к системе}{14}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Нефункциональные требования}{15}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Выбор технологий и инструментов}{16}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Архитектура системы}{17}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Компонент сбора данных}{18}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Компонент статического анализа и формирования метрик}{19}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Компонент классификации}{19}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Компонент генерации рекомендаций}{19}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}Веб-приложение визуализации на Dash}{20}{subsection.2.4.5}%
-\contentsline {section}{\numberline {2.5}Диаграмма классов}{20}{section.2.5}%
-\contentsline {paragraph}{GitHubRepoAnalyzer}{21}{section*.7}%
-\contentsline {paragraph}{CommitRiskModel}{21}{section*.8}%
-\contentsline {paragraph}{generate\_recommendations}{22}{section*.9}%
-\contentsline {paragraph}{Взаимосвязи}{22}{section*.10}%
-\contentsline {section}{\numberline {2.6}Заключение}{22}{section.2.6}%
-\contentsline {chapter}{\chapternumberline {3}Реализация системы формирования CAPAs на основе изменений репозитория кода}{23}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Извлечение и обработка данных из GitHub}{23}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Аутентификация и инициализация подключения}{24}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Получение списка коммитов}{25}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Извлечение деталей коммита и подсчёт метрик}{26}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Интеграция модели CommitRiskModel}{28}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Постановка задачи и необходимость генерации псевдометок}{29}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Код генерации псевдометок}{29}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Выбор и обработка признаков}{30}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Обучение классификатора}{30}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Предсказание риска и вероятностей}{31}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Интерпретация модели — важность признаков}{32}{subsection.3.2.6}%
-\contentsline {section}{\numberline {3.3}Реализация панели визуализации на фреймворке Dash}{32}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Структура и организация интерфейса}{33}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Пример построения гистограммы с использованием plotly.express}{33}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Динамическое обновление интерфейса и фильтрация данных}{34}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Генерация и отображение рекомендаций CAPA}{35}{subsection.3.3.4}%
-\contentsline {section}{\numberline {3.4}Интеграция компонентов в единую систему}{36}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Выводы}{37}{section.3.5}%
-\contentsline {chapter}{\chapternumberline {4}Тестирование системы формирования CAPAs на основе изменений репозитория кода}{37}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Введение}{37}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Методика проведения тестирования}{38}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Сравнение моделей классификации}{40}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Модульное тестирование}{42}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Мутационное тестирование}{45}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Итоги прогона}{45}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Результат мутационного тестирования}{45}{subsection.4.5.2}%
-\contentsline {section}{\numberline {4.6}Нагрузочное тестирование}{46}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Обзор и интерпретация результатов}{47}{section.4.7}%
-\contentsline {subsection}{\numberline {4.7.1}Описание страницы рекомендаций по коммитам}{51}{subsection.4.7.1}%
-\contentsline {section}{\numberline {4.8}Сравнение экспертных меток и рекомендаций, выданных моделью}{52}{section.4.8}%
-\contentsline {subsection}{\numberline {4.8.1}Рекомендации экспертов}{53}{subsection.4.8.1}%
-\contentsline {subsection}{\numberline {4.8.2}Рекомендации модели}{54}{subsection.4.8.2}%
-\contentsline {subsection}{\numberline {4.8.3}Сравнение рекомендаций экспертов и модели}{55}{subsection.4.8.3}%
-\contentsline {section}{\numberline {4.9}Выводы}{55}{section.4.9}%
-\contentsline {chapter}{Заключение}{58}{chapter*.24}%
-\contentsline {chapter}{Словарь терминов}{83}{chapter*.26}%
-\contentsline {chapter}{Список использованных источников}{83}{chapter*.26}%
-\contentsline {chapter}{Библиографический список}{84}{chapter*.27}%
+\contentsline {chapter}{Введение}{11}{chapter*.4}%
+\contentsline {chapter}{\chapternumberline {1}Исследование методов и средств формирования CAPAs на основе изменений репозитория кода}{13}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Современные подходы к формированию CAPA на основе анализа репозиториев кода}{13}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Системы управления CAPA и интеграция в процессы разработки}{13}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Методы анализа коммитов и обучение на данных репозиториев}{14}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Предсказание дефектных коммитов}{14}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Классификация коммитов по типам работ}{15}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}Инструменты и системы автоматизации CAPA}{16}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Диаграмма вариантов использования}{19}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Выводы}{21}{section.1.6}%
+\contentsline {chapter}{\chapternumberline {2}Проектирование системы формирования CAPAs на основе изменений репозитория кода}{21}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Требования к системе}{21}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Нефункциональные требования}{22}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Выбор технологий и инструментов}{23}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Архитектура системы}{24}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Компонент сбора данных}{25}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Компонент статического анализа и формирования метрик}{25}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Компонент классификации}{25}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Компонент генерации рекомендаций}{26}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Веб-приложение визуализации на Dash}{26}{subsection.2.4.5}%
+\contentsline {section}{\numberline {2.5}Диаграмма классов}{26}{section.2.5}%
+\contentsline {paragraph}{GitHubRepoAnalyzer}{26}{section*.9}%
+\contentsline {paragraph}{CommitRiskModel}{28}{section*.10}%
+\contentsline {paragraph}{generate\_recommendations}{28}{section*.11}%
+\contentsline {paragraph}{Взаимосвязи}{28}{section*.12}%
+\contentsline {section}{\numberline {2.6}Заключение}{28}{section.2.6}%
+\contentsline {chapter}{\chapternumberline {3}Реализация системы формирования CAPAs на основе изменений репозитория кода}{29}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Извлечение и обработка данных из GitHub}{30}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Аутентификация и инициализация подключения}{30}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Получение списка коммитов}{31}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Извлечение деталей коммита и подсчёт метрик}{32}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Интеграция модели CommitRiskModel}{34}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Постановка задачи и необходимость генерации псевдометок}{35}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Код генерации псевдометок}{35}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Выбор и обработка признаков}{36}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Обучение классификатора}{37}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Предсказание риска и вероятностей}{37}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Интерпретация модели — важность признаков}{38}{subsection.3.2.6}%
+\contentsline {section}{\numberline {3.3}Реализация панели визуализации на фреймворке Dash}{38}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Структура и организация интерфейса}{39}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Пример построения гистограммы с использованием plotly.express}{39}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Динамическое обновление интерфейса и фильтрация данных}{40}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Генерация и отображение рекомендаций CAPA}{41}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}Интеграция компонентов в единую систему}{42}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Выводы}{43}{section.3.5}%
+\contentsline {chapter}{\chapternumberline {4}Тестирование системы формирования CAPAs на основе изменений репозитория кода}{43}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Введение}{43}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Модульное тестирование}{44}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Мутационное тестирование}{46}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Итоги прогона}{47}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Результат мутационного тестирования}{47}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Результаты после исправлений}{48}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Нагрузочное тестирование}{48}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Набор датасетов}{49}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Сравнение моделей классификации}{51}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Выводы}{52}{subsection.4.6.1}%
+\contentsline {section}{\numberline {4.7}Апробация и интерпретация результатов}{52}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Описание страницы рекомендаций по коммитам}{56}{subsection.4.7.1}%
+\contentsline {section}{\numberline {4.8}Сравнение экспертных меток и рекомендаций, выданных моделью}{57}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Рекомендации экспертов}{58}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Рекомендации модели}{59}{subsection.4.8.2}%
+\contentsline {subsection}{\numberline {4.8.3}Сравнение рекомендаций экспертов и модели}{60}{subsection.4.8.3}%
+\contentsline {section}{\numberline {4.9}Выводы}{60}{section.4.9}%
+\contentsline {chapter}{Заключение}{63}{chapter*.25}%
+\contentsline {chapter}{Словарь терминов}{65}{chapter*.26}%
+\contentsline {chapter}{Список использованных источников}{65}{chapter*.26}%
+\contentsline {chapter}{Библиографический список}{66}{chapter*.27}%
+\changetocdepth {0}
+\contentsline {chapter}{Приложение{} 1. Исходный код разработанного решения}{68}{appendix*.28}%
+\changetocdepth {0}
+\contentsline {chapter}{Приложение{} 2. Сравнение моделей классификации для разных проектов}{91}{appendix*.29}%

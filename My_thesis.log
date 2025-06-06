@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  5 JUN 2025 13:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  6 JUN 2025 17:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3517,42 +3517,6 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'My_thesis.bbl' found.
 
 (./My_thesis.bbl)
-
-Package biblatex Warning: citation 'FDA'
-(biblatex)                was not found at all in the .bbl file,
-(biblatex)                bibliography labels cannot be generated,
-(biblatex)                please correct the citation.
-
-
-Package biblatex Warning: citation 'Bugayenko2022'
-(biblatex)                was not found at all in the .bbl file,
-(biblatex)                bibliography labels cannot be generated,
-(biblatex)                please correct the citation.
-
-
-Package biblatex Warning: citation 'Commit-classification'
-(biblatex)                was not found at all in the .bbl file,
-(biblatex)                bibliography labels cannot be generated,
-(biblatex)                please correct the citation.
-
-
-Package biblatex Warning: citation 'One-Class'
-(biblatex)                was not found at all in the .bbl file,
-(biblatex)                bibliography labels cannot be generated,
-(biblatex)                please correct the citation.
-
-
-Package biblatex Warning: citation 'Sazid'
-(biblatex)                was not found at all in the .bbl file,
-(biblatex)                bibliography labels cannot be generated,
-(biblatex)                please correct the citation.
-
-
-Package biblatex Warning: citation 'Hericko'
-(biblatex)                was not found at all in the .bbl file,
-(biblatex)                bibliography labels cannot be generated,
-(biblatex)                please correct the citation.
-
 Package biblatex Info: Reference section=0 on input line 34.
 Package biblatex Info: Reference segment=0 on input line 34.
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
@@ -3563,7 +3527,8 @@ Package nag Info: Command \hc@caption not defined, skipping amendment on input
 line 34.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
 line 34.
-(./template_settings/common/renames.tex) (./my_folder/title.tex
+ (./template_settings/common/renames.tex)
+(./my_folder/title.tex
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -3624,8 +3589,105 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/
-texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}])
-(./my_folder/contents.tex (./My_thesis.toc
+texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}]) (./my_folder/task.tex (./
+my_folder/task_settings.tex)
+
+LaTeX Warning: Empty bibliography on input line 54.
+
+
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[2.2
+
+]) (./my_folder/summary.tex
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[3.3]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T2A).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[4.4
+
+{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[5.5]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[6.6]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[7.7]) (./my_folder/contents.tex
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[8.8] (./My_thesis.toc
 Package cleveref Info: loaded `russian' language definitions on input line 2.
 
 
@@ -3645,8 +3707,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[2.2
-
+[9.9
 
 ])
 
@@ -3660,7 +3721,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[3.3]) (./my_folder/introduction.tex
+[10.10]) (./my_folder/introduction.tex
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3672,7 +3733,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[4.4
+[11.11
 
 ]) (./my_folder/chapter1.tex
 
@@ -3686,21 +3747,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[5.5]
-
-LaTeX Warning: Citation 'FDA' on page 6 undefined on input line 5.
-
-
-LaTeX Warning: Citation 'Bugayenko2022' on page 6 undefined on input line 7.
-
-
-LaTeX Warning: Citation 'Commit-classification' on page 6 undefined on input li
-ne 7.
-
-
-LaTeX Warning: Citation 'FDA' on page 6 undefined on input line 11.
-
-
+[12.12]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3712,24 +3759,12 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[6.6
+[13.13
 
 ]
-
-LaTeX Warning: Citation 'FDA' on page 7 undefined on input line 13.
-
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/it' will be
 (Font)              scaled to size 14.05249pt on input line 16.
 
-LaTeX Warning: Citation 'One-Class' on page 7 undefined on input line 17.
-
-
-LaTeX Warning: Citation 'One-Class' on page 7 undefined on input line 17.
-
-
-LaTeX Warning: Citation 'One-Class' on page 7 undefined on input line 17.
-
-
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3741,326 +3776,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[7.7]
-
-LaTeX Warning: Citation 'Commit-classification' on page 8 undefined on input li
-ne 21.
-
-
-LaTeX Warning: Citation 'Commit-classification' on page 8 undefined on input li
-ne 21.
-
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: T2A).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-LaTeX Warning: Citation 'Commit-classification' on page 8 undefined on input li
-ne 21.
-
-
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[8.8]
-
-LaTeX Warning: Citation 'Commit-classification' on page 9 undefined on input li
-ne 24.
-
-
-LaTeX Warning: Citation 'Sazid' on page 9 undefined on input line 24.
-
-
-LaTeX Warning: Citation 'Bugayenko2022' on page 9 undefined on input line 33.
-
-
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[9.9{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
-
-LaTeX Warning: Citation 'Bugayenko2022' on page 10 undefined on input line 41.
-
-
-LaTeX Warning: Citation 'Bugayenko2022' on page 10 undefined on input line 41.
-
-
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[10.10]
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 53.
-
-Overfull \hbox (1.93575pt too wide) in paragraph at lines 124--124
-[]|[]| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) MasterControl
- []
-
-
-Underfull \hbox (badness 1881) in paragraph at lines 124--124
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) QMS плат^^?
- []
-
-
-Underfull \hbox (badness 7631) in paragraph at lines 124--124
-\T2A/Tempora-TLF/m/n/14.05249 (+20) ет^^?ся вруч^^?
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Полный
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) JIT-Defect
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-\T2A/Tempora-TLF/m/n/14.05249 (+17) ве^^?ро^^?ят^^?ность
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) @0capa
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Бот-анализ
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-\T2A/Tempora-TLF/m/n/14.05249 (+20) ре^^?по^^?зи^^?то^^?
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Автомати-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Текстовые
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-\T2A/Tempora-TLF/m/n/14.05249 (+20) шаб^^?лон^^?ные
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Автомати-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Текстовые
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-\T2A/Tempora-TLF/m/n/14.05249 (+20) ре^^?ко^^?мен^^?
- []
-
-
-Underfull \hbox (badness 8075) in paragraph at lines 124--124
-\T2A/Tempora-TLF/m/n/14.05249 (+20) да^^?ции при
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Разрабатывае-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) ML-анализ
- []
-
-
-Underfull \hbox (badness 3838) in paragraph at lines 124--124
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Да (ин^^?те^^?гра^^?
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-\T2A/Tempora-TLF/m/n/14.05249 (+20) ция че^^?рез
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-\T2A/Tempora-TLF/m/n/14.05249 (+20) CI/CD пай^^?
- []
-
-
-Underfull \hbox (badness 3281) in paragraph at lines 124--124
-\T2A/Tempora-TLF/m/n/14.05249 (+20) ана^^?лиз ис^^?то^^?
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Да (Pylint,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-\T2A/Tempora-TLF/m/n/14.05249 (+20) Checkstyle,
- []
-
-
-Overfull \hbox (4.6247pt too wide) in paragraph at lines 124--124
-[]|\T2A/Tempora-TLF/m/n/14.05249 (-20) Автоматичес-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-\T2A/Tempora-TLF/m/n/14.05249 (+20) кая ге^^?не^^?
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-\T2A/Tempora-TLF/m/n/14.05249 (+20) ра^^?ция
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-\T2A/Tempora-TLF/m/n/14.05249 (+20) ре^^?ко^^?мен^^?да^^?
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Подробные
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-\T2A/Tempora-TLF/m/n/14.05249 (+20) ре^^?ко^^?мен^^?
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-\T2A/Tempora-TLF/m/n/14.05249 (+20) да^^?ции с
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-\T2A/Tempora-TLF/m/n/14.05249 (+20) при^^?о^^?ри^^?
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-\T2A/Tempora-TLF/m/n/14.05249 (+20) те^^?та^^?ми и
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-\T2A/Tempora-TLF/m/n/14.05249 (+20) при^^?чи^^?на^^?ми
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+Tempora-TLF on inpu
-t line 130.
-(c:/texlive/2024/texmf-dist/tex/latex/tempora/TS1Tempora-TLF.fd
-File: TS1Tempora-TLF.fd 2016/02/02 (autoinst) Font definitions for TS1/Tempora-
-TLF.
-)
-LaTeX Font Info:    Font shape `TS1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 14.05249pt on input line 130.
-
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[11.11{c:/texlive/2024/texmf-dist/fonts/enc/dvips/tempora/tmp_ac5xuc.enc}]
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[12.12]
-<my_folder/images/useCase (1).png, id=219, 613.29124pt x 402.50375pt>
-File: my_folder/images/useCase (1).png Graphic file (type png)
-<use my_folder/images/useCase (1).png>
-Package pdftex.def Info: my_folder/images/useCase (1).png  used on input line 1
-56.
-(pdftex.def)             Requested size: 435.32422pt x 285.70595pt.
-
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[13.13]) (./my_folder/chapter2.tex
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[14.14 <./my_folder/images/useCase (1).png (PNG copy)>]
-
-LaTeX Warning: Citation 'Hericko' on page 15 undefined on input line 10.
-
-
-LaTeX Warning: Citation 'Bugayenko2022' on page 15 undefined on input line 11.
-
-
+[14.14]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4085,13 +3801,6 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [16.16]
-<my_folder/images/architect.png, id=238, 369.38pt x 402.50375pt>
-File: my_folder/images/architect.png Graphic file (type png)
-<use my_folder/images/architect.png>
-Package pdftex.def Info: my_folder/images/architect.png  used on input line 45.
-
-(pdftex.def)             Requested size: 386.95897pt x 421.65874pt.
-
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4104,6 +3813,189 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [17.17]
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 53.
+
+Overfull \hbox (3.29726pt too wide) in paragraph at lines 123--123
+[]|[]| 
+ []
+
+
+Overfull \hbox (1.93575pt too wide) in paragraph at lines 123--123
+[]|[]| 
+ []
+
+
+Overfull \hbox (4.96953pt too wide) in paragraph at lines 123--123
+[]|[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) MasterControl
+ []
+
+
+Underfull \hbox (badness 1881) in paragraph at lines 123--123
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) QMS плат^^?
+ []
+
+
+Underfull \hbox (badness 7631) in paragraph at lines 123--123
+\T2A/Tempora-TLF/m/n/14.05249 (+20) ет^^?ся вруч^^?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Полный
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) JIT-Defect
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T2A/Tempora-TLF/m/n/14.05249 (+17) ве^^?ро^^?ят^^?ность
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) @0capa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Бот-анализ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T2A/Tempora-TLF/m/n/14.05249 (+20) ре^^?по^^?зи^^?то^^?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Автомати-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Текстовые
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T2A/Tempora-TLF/m/n/14.05249 (+20) шаб^^?лон^^?ные
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Автомати-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Текстовые
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T2A/Tempora-TLF/m/n/14.05249 (+20) ре^^?ко^^?мен^^?
+ []
+
+
+Underfull \hbox (badness 8075) in paragraph at lines 123--123
+\T2A/Tempora-TLF/m/n/14.05249 (+20) да^^?ции при
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Разрабатывае-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) ML-анализ
+ []
+
+
+Underfull \hbox (badness 3838) in paragraph at lines 123--123
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Да (ин^^?те^^?гра^^?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T2A/Tempora-TLF/m/n/14.05249 (+20) ция че^^?рез
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T2A/Tempora-TLF/m/n/14.05249 (+20) CI/CD пай^^?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Да (Pylint,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T2A/Tempora-TLF/m/n/14.05249 (+20) Checkstyle,
+ []
+
+
+Overfull \hbox (4.6247pt too wide) in paragraph at lines 123--123
+[]|\T2A/Tempora-TLF/m/n/14.05249 (-20) Автоматичес-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T2A/Tempora-TLF/m/n/14.05249 (+20) кая ге^^?не^^?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T2A/Tempora-TLF/m/n/14.05249 (+20) ра^^?ция
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T2A/Tempora-TLF/m/n/14.05249 (+20) ре^^?ко^^?мен^^?да^^?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Подробные
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T2A/Tempora-TLF/m/n/14.05249 (+20) ре^^?ко^^?мен^^?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T2A/Tempora-TLF/m/n/14.05249 (+20) да^^?ции с
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T2A/Tempora-TLF/m/n/14.05249 (+20) при^^?о^^?ри^^?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T2A/Tempora-TLF/m/n/14.05249 (+20) те^^?та^^?ми и
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T2A/Tempora-TLF/m/n/14.05249 (+20) при^^?чи^^?на^^?ми
+ []
+
+
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4115,7 +4007,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[18.18 <./my_folder/images/architect.png>]
+[18.18]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4128,12 +4020,12 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [19.19]
-<my_folder/images/classDiagram.jpg, id=256, 984.80598pt x 804.13098pt>
-File: my_folder/images/classDiagram.jpg Graphic file (type jpg)
-<use my_folder/images/classDiagram.jpg>
-Package pdftex.def Info: my_folder/images/classDiagram.jpg  used on input line 
-99.
-(pdftex.def)             Requested size: 411.14528pt x 335.72041pt.
+<my_folder/images/useCase (1).png, id=334, 613.29124pt x 402.50375pt>
+File: my_folder/images/useCase (1).png Graphic file (type png)
+<use my_folder/images/useCase (1).png>
+Package pdftex.def Info: my_folder/images/useCase (1).png  used on input line 1
+55.
+(pdftex.def)             Requested size: 435.32422pt x 285.70595pt.
 
 
 
@@ -4146,7 +4038,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[20.20 <./my_folder/images/classDiagram.jpg>]
+[20.20 <./my_folder/images/useCase (1).png>]) (./my_folder/chapter2.tex
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4158,21 +4050,28 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[21.21]) (./my_folder/chapter3.tex
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[22.22] (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
+[21.21]
+LaTeX Font Info:    Trying to load font information for TS1+Tempora-TLF on inpu
+t line 18.
+ (c:/texlive/2024/texmf-dist/tex/latex/tempora/TS1Tempora-TLF.fd
+File: TS1Tempora-TLF.fd 2016/02/02 (autoinst) Font definitions for TS1/Tempora-
+TLF.
 )
+LaTeX Font Info:    Font shape `TS1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 14.05249pt on input line 18.
+
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[22.22{c:/texlive/2024/texmf-dist/fonts/enc/dvips/tempora/tmp_ac5xuc.enc}]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4185,10 +4084,11 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [23.23]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 13.
-LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 14.
+<my_folder/images/idef0.png, id=358, 451.18562pt x 239.89626pt>
+File: my_folder/images/idef0.png Graphic file (type png)
+<use my_folder/images/idef0.png>
+Package pdftex.def Info: my_folder/images/idef0.png  used on input line 45.
+(pdftex.def)             Requested size: 483.69687pt x 257.19525pt.
 
 
 
@@ -4201,7 +4101,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[24.24]
+[24.24 <./my_folder/images/idef0.png>]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4214,6 +4114,13 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [25.25]
+<my_folder/images/classDiagram.jpg, id=371, 984.80598pt x 804.13098pt>
+File: my_folder/images/classDiagram.jpg Graphic file (type jpg)
+<use my_folder/images/classDiagram.jpg>
+Package pdftex.def Info: my_folder/images/classDiagram.jpg  used on input line 
+99.
+(pdftex.def)             Requested size: 411.14528pt x 335.72041pt.
+
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4237,10 +4144,13 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[27.27]
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
-(Font)              scaled to size 14.05249pt on input line 165.
+[27.27 <./my_folder/images/classDiagram.jpg>]
+Underfull \hbox (badness 4193) in paragraph at lines 127--128
+[]\T2A/Tempora-TLF/m/n/14.05249 (+20) init(classifier: ClassifierMixin, feature
+s: List<str]=None, cluster_model:
+ []
 
+) (./my_folder/chapter3.tex
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4264,7 +4174,14 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[29.29{c:/texlive/2024/texmf-dist/fonts/enc/dvips/tempora/tmp_q3dzgc.enc}]
+[29.29] (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 13.
+LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 14.
+
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4277,12 +4194,6 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [30.30]
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
-[]\T2A/Tempora-TLF/m/n/14.05249 (+20) Для по^^?вы^^?ше^^?ния до^^?ве^^?рия к пр
-ед^^?ска^^?за^^?ни^^?ям ре^^?а^^?ли^^?зо^^?ван ме^^?тод
- []
-
-
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4307,13 +4218,6 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [32.32]
-<my_folder/images/dashboard.png, id=499, 1284.8pt x 631.35875pt>
-File: my_folder/images/dashboard.png Graphic file (type png)
-<use my_folder/images/dashboard.png>
-Package pdftex.def Info: my_folder/images/dashboard.png  used on input line 305
-.
-(pdftex.def)             Requested size: 411.14528pt x 202.03893pt.
-
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4337,7 +4241,22 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[34.34 <./my_folder/images/dashboard.png>]
+[34.34]
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
+(Font)              scaled to size 14.05249pt on input line 165.
+
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[35.35{c:/texlive/2024/texmf-dist/fonts/enc/dvips/tempora/tmp_q3dzgc.enc}]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4349,8 +4268,82 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[35.35]
-<my_folder/images/mermaid.png, id=551, 1148.79187pt x 346.29375pt>
+[36.36]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[37.37]
+Overfull \hbox (34.95474pt too wide) in paragraph at lines 262--263
+[]\T2A/Tempora-TLF/m/n/14.05249 (-20) Для по^^?вы^^?ше^^?ния до^^?ве^^?рия к пр
+ед^^?ска^^?за^^?ни^^?ям ре^^?а^^?ли^^?зо^^?ван ме^^?тод \T2A/cmtt/m/n/14.05249 
+feature_importances()\T2A/Tempora-TLF/m/n/14.05249 (-20) ,
+ []
+
+
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[38.38]
+<my_folder/images/dashboard.png, id=614, 1284.8pt x 631.35875pt>
+File: my_folder/images/dashboard.png Graphic file (type png)
+<use my_folder/images/dashboard.png>
+Package pdftex.def Info: my_folder/images/dashboard.png  used on input line 305
+.
+(pdftex.def)             Requested size: 411.14528pt x 202.03893pt.
+
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[39.39]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[40.40 <./my_folder/images/dashboard.png>]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[41.41]
+<my_folder/images/mermaid.png, id=666, 1148.79187pt x 346.29375pt>
 File: my_folder/images/mermaid.png Graphic file (type png)
 <use my_folder/images/mermaid.png>
 Package pdftex.def Info: my_folder/images/mermaid.png  used on input line 404.
@@ -4372,7 +4365,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[36.36]) (./my_folder/chapter4.tex
+[42.42]) (./my_folder/chapter4.tex
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4384,312 +4377,11 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[37.37 <./my_folder/images/mermaid.png>]
-Underfull \hbox (badness 1565) in paragraph at lines 12--13
-[]\T2A/Tempora-TLF/m/n/14.05249 (+20) Для про^^?вер^^?ки си^^?сте^^?мы бы^^?ло 
-вы^^?бра^^?но несколь^^?ко те^^?сто^^?вых ре^^?по^^?зи^^?
- []
-
-
-Underfull \hbox (badness 2318) in paragraph at lines 12--13
-\T2A/Tempora-TLF/m/n/14.05249 (+20) то^^?ри^^?ев с соб^^?ствен^^?ны^^?ми раз^^?
-ра^^?бот^^?ка^^?ми: \T2A/cmtt/m/n/14.05249 Tq\T2A/Tempora-TLF/m/n/14.05249 (+20
-) , \T2A/cmtt/m/n/14.05249 scherBook\T2A/Tempora-TLF/m/n/14.05249 (+20) , \T2A/
-cmtt/m/n/14.05249 NTO2024-2025\T2A/Tempora-TLF/m/n/14.05249 (+20) , а
- []
-
-
-Underfull \hbox (badness 1502) in paragraph at lines 12--13
-\T2A/Tempora-TLF/m/n/14.05249 (+20) так^^?же ре^^?по^^?зи^^?то^^?рии предо^^?ст
-ав^^?лен^^?ные сто^^?рон^^?ни^^?ми раз^^?ра^^?бот^^?чи^^?ка^^?ми и сту^^?
- []
-
-
-Underfull \hbox (badness 3826) in paragraph at lines 12--13
-\T2A/Tempora-TLF/m/n/14.05249 (+20) ден^^?та^^?ми, ко^^?то^^?рые со^^?гла^^?си^
-^?лись по^^?участ^^?во^^?вать в те^^?сти^^?ро^^?ва^^?нии и апро^^?
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
-\T2A/Tempora-TLF/m/n/14.05249 (+20) ба^^?ции про^^?ек^^?та: \T2A/cmtt/m/n/14.05
-249 urlagushka/polytech-labs\T2A/Tempora-TLF/m/n/14.05249 (+20) , \T2A/cmtt/m/n
-/14.05249 urlagushka/h8-pipeline\T2A/Tempora-TLF/m/n/14.05249 (+20) ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
-\T2A/cmtt/m/n/14.05249 AlPakh/topotik-backend\T2A/Tempora-TLF/m/n/14.05249 (+20
-) , \T2A/cmtt/m/n/14.05249 AlPakh/topotik-frontend\T2A/Tempora-TLF/m/n/14.05249
- (+20) , \T2A/cmtt/m/n/14.05249 Pacan4ik/tf-idf\T2A/Tempora-TLF/m/n/14.05249 (+
-20) ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--18
-[]|\T2A/Tempora-TLF/b/n/14.05249 (+20) Кол-во
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--18
-\T2A/Tempora-TLF/b/n/14.05249 (+20) ком^^?ми^^?
- []
-
-
-Overfull \hbox (11.18486pt too wide) in alignment at lines 14--20
- [] [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--24
-[]|\T2A/Tempora-TLF/b/n/14.05249 (+20) Кол-во
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--24
-\T2A/Tempora-TLF/b/n/14.05249 (+20) ком^^?ми^^?
- []
-
-
-Overfull \hbox (11.18486pt too wide) in alignment at lines 20--26
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (11.18486pt too wide) in alignment at lines 26--29
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (11.18486pt too wide) in alignment at lines 29--32
- [] [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--36
-[]|\T2A/cmtt/m/n/14.05249 jup-ag/ pyth-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--36
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Python,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Инфраструк-
- []
-
-
-Underfull \hbox (badness 6859) in paragraph at lines 37--38
-\T2A/Tempora-TLF/m/n/14.05249 (+20) network: крос^^?счейн
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
-[]|\T2A/cmtt/m/n/14.05249 Pacan4ik/
- []
-
-
-Overfull \hbox (3.8294pt too wide) in paragraph at lines 41--41
-\T2A/cmtt/m/n/14.05249 tinkoff-course-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
-[]|\T2A/cmtt/m/n/14.05249 urlagushka/
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) ML/AI пай^^?
- []
-
-
-Underfull \hbox (badness 8075) in paragraph at lines 44--45
-\T2A/Tempora-TLF/m/n/14.05249 (+20) SDK; ис^^?поль^^?зу^^?ет^^?ся
- []
-
-
-Underfull \hbox (badness 3965) in paragraph at lines 44--45
-\T2A/Tempora-TLF/m/n/14.05249 (+20) для ком^^?пью^^?тер^^?но^^?го
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
-[]|\T2A/cmtt/m/n/14.05249 AlPakh/
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
-\T2A/cmtt/m/n/14.05249 topotik-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Python
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Серверная
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--52
-[]|\T2A/cmtt/m/n/14.05249 AlPakh/
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--52
-\T2A/cmtt/m/n/14.05249 topotik-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--52
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) JavaScript
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--52
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Клиентская
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Vue-приложение с
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
-\T2A/Tempora-TLF/m/n/14.05249 (+20) марш^^?ру^^?ти^^?за^^?ци^^?ей,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
-[]|\T2A/cmtt/m/n/14.05249 Pacan4ik/
- []
-
-
-Underfull \hbox (badness 2653) in paragraph at lines 55--55
-\T2A/Tempora-TLF/m/n/14.05249 (+20) ра^^?бот^^?ки тек^^?
- []
-
-
-Underfull \hbox (badness 2065) in paragraph at lines 55--56
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Базовая ре^^?а^^?ли^^?за^^?ция
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--58
-[]|\T2A/cmtt/m/n/14.05249 Ausland3r/
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
-[]|\T2A/cmtt/m/n/14.05249 urlagushka/
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
-[]|\T2A/cmtt/m/n/14.05249 Ausland3r/
- []
-
-
-Overfull \hbox (10.63931pt too wide) in paragraph at lines 64--64
-[]|\T2A/Tempora-TLF/m/n/14.05249 (-20) Веб-приложение| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--67
-[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Фреймворк
- []
-
-
-Overfull \hbox (11.18486pt too wide) in alignment at lines 32--68
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[38.38]
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[39.39]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[40.40]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[41.41]
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[42.42]
-Underfull \hbox (badness 3019) in paragraph at lines 144--147
-[]\T2A/cmtt/m/n/14.05249 ml_model.py\T2A/Tempora-TLF/m/n/14.05249 (+20) : Про^^
-?ве^^?ря^^?лись ос^^?нов^^?ные ме^^?то^^?ды обу^^?че^^?ния и пред^^?
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--147
-\T2A/Tempora-TLF/m/n/14.05249 (+20) ска^^?за^^?ния мо^^?де^^?лей ма^^?шин^^?но^
-^?го обу^^?че^^?ния. Те^^?сты, та^^?кие как
- []
-
-
-Underfull \hbox (badness 1668) in paragraph at lines 144--147
-[][]\T2A/cmtt/m/n/14.05249 test_model_extremes_and_balanced_cases []\T2A/Tempor
-a-TLF/m/n/14.05249 (+20) и [][]\T2A/cmtt/m/n/14.05249 test_model_predict_
+[43.43 <./my_folder/images/mermaid.png>]
+Overfull \hbox (68.85799pt too wide) in paragraph at lines 16--19
+\T2A/Tempora-TLF/m/n/14.05249 (-20) лей ма^^?шин^^?но^^?го обу^^?че^^?ния. Те^^
+?сты, та^^?кие как [][]\T2A/cmtt/m/n/14.05249 test_model_extremes_and_balanced_
+cases
  []
 
 
@@ -4704,28 +4396,40 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[43.43]
-<my_folder/images/test_result.png, id=605, 394.47375pt x 226.34563pt>
+[44.44]
+<my_folder/images/test_result.png, id=696, 394.47375pt x 226.34563pt>
 File: my_folder/images/test_result.png Graphic file (type png)
 <use my_folder/images/test_result.png>
-Package pdftex.def Info: my_folder/images/test_result.png  used on input line 1
-70.
+Package pdftex.def Info: my_folder/images/test_result.png  used on input line 4
+2.
 (pdftex.def)             Requested size: 483.69687pt x 277.54347pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 171.
+(caption)                particular \caption on input line 43.
 See the caption package documentation for explanation.
 
 
-Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 173.
 
-<my_folder/images/coverage.png, id=606, 224.33812pt x 101.37875pt>
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[45.45]
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 45.
+
+<my_folder/images/coverage.png, id=701, 224.33812pt x 101.37875pt>
 File: my_folder/images/coverage.png Graphic file (type png)
 <use my_folder/images/coverage.png>
-Package pdftex.def Info: my_folder/images/coverage.png  used on input line 177.
-
+Package pdftex.def Info: my_folder/images/coverage.png  used on input line 49.
 (pdftex.def)             Requested size: 386.95897pt x 174.88625pt.
 
 
@@ -4739,7 +4443,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[44.44 <./my_folder/images/test_result.png> <./my_folder/images/coverage.png>]
+[46.46 <./my_folder/images/test_result.png> <./my_folder/images/coverage.png>]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4751,14 +4455,67 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[45.45]
-<my_folder/images/nagruzka.png, id=623, 856.19875pt x 416.55624pt>
+[47.47]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[48.48]
+<my_folder/images/nagruzka.png, id=722, 856.19875pt x 416.55624pt>
 File: my_folder/images/nagruzka.png Graphic file (type png)
 <use my_folder/images/nagruzka.png>
-Package pdftex.def Info: my_folder/images/nagruzka.png  used on input line 257.
+Package pdftex.def Info: my_folder/images/nagruzka.png  used on input line 153.
 
 (pdftex.def)             Requested size: 483.69687pt x 235.32928pt.
 
+Underfull \hbox (badness 3323) in paragraph at lines 159--160
+[]\T2A/Tempora-TLF/m/n/14.05249 (+20) Для про^^?вер^^?ки си^^?сте^^?мы бы^^?ло 
+вы^^?бра^^?но несколь^^?ко те^^?сто^^?вых ре^^?по^^?зи^^?
+ []
+
+
+Underfull \hbox (badness 2318) in paragraph at lines 159--160
+\T2A/Tempora-TLF/m/n/14.05249 (+20) то^^?ри^^?ев с соб^^?ствен^^?ны^^?ми раз^^?
+ра^^?бот^^?ка^^?ми: \T2A/cmtt/m/n/14.05249 Tq\T2A/Tempora-TLF/m/n/14.05249 (+20
+) , \T2A/cmtt/m/n/14.05249 scherBook\T2A/Tempora-TLF/m/n/14.05249 (+20) , \T2A/
+cmtt/m/n/14.05249 NTO2024-2025\T2A/Tempora-TLF/m/n/14.05249 (+20) , а
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 159--160
+\T2A/Tempora-TLF/m/n/14.05249 (+20) так^^?же ре^^?по^^?зи^^?то^^?рии предо^^?ст
+ав^^?лен^^?ные сто^^?рон^^?ни^^?ми раз^^?ра^^?бот^^?чи^^?ка^^?ми и сту^^?
+ []
+
+
+Underfull \hbox (badness 3826) in paragraph at lines 159--160
+\T2A/Tempora-TLF/m/n/14.05249 (+20) ден^^?та^^?ми, ко^^?то^^?рые со^^?гла^^?си^
+^?лись по^^?участ^^?во^^?вать в те^^?сти^^?ро^^?ва^^?нии и апро^^?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
+\T2A/Tempora-TLF/m/n/14.05249 (+20) ба^^?ции про^^?ек^^?та: \T2A/cmtt/m/n/14.05
+249 urlagushka/polytech-labs\T2A/Tempora-TLF/m/n/14.05249 (+20) , \T2A/cmtt/m/n
+/14.05249 urlagushka/h8-pipeline\T2A/Tempora-TLF/m/n/14.05249 (+20) ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
+\T2A/cmtt/m/n/14.05249 AlPakh/topotik-backend\T2A/Tempora-TLF/m/n/14.05249 (+20
+) , \T2A/cmtt/m/n/14.05249 AlPakh/topotik-frontend\T2A/Tempora-TLF/m/n/14.05249
+ (+20) , \T2A/cmtt/m/n/14.05249 Pacan4ik/tf-idf\T2A/Tempora-TLF/m/n/14.05249 (+
+20) ,
+ []
+
+
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4770,31 +4527,241 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[46.46]
-<my_folder/images/first_page.png, id=629, 1278.7775pt x 475.27562pt>
+[49.49 <./my_folder/images/nagruzka.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 165--165
+[]|\T2A/Tempora-TLF/b/n/14.05249 (+20) Кол-во
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--165
+\T2A/Tempora-TLF/b/n/14.05249 (+20) ком^^?ми^^?
+ []
+
+
+Overfull \hbox (11.18486pt too wide) in alignment at lines 161--167
+ [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
+[]|\T2A/Tempora-TLF/b/n/14.05249 (+20) Кол-во
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
+\T2A/Tempora-TLF/b/n/14.05249 (+20) ком^^?ми^^?
+ []
+
+
+Overfull \hbox (11.18486pt too wide) in alignment at lines 167--173
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (11.18486pt too wide) in alignment at lines 173--176
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (11.18486pt too wide) in alignment at lines 176--179
+ [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
+[]|\T2A/cmtt/m/n/14.05249 jup-ag/ pyth-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Python,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Инфраструк-
+ []
+
+
+Underfull \hbox (badness 6859) in paragraph at lines 184--185
+\T2A/Tempora-TLF/m/n/14.05249 (+20) network: крос^^?счейн
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
+[]|\T2A/cmtt/m/n/14.05249 Pacan4ik/
+ []
+
+
+Overfull \hbox (3.8294pt too wide) in paragraph at lines 188--188
+\T2A/cmtt/m/n/14.05249 tinkoff-course-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+[]|\T2A/cmtt/m/n/14.05249 urlagushka/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) ML/AI пай^^?
+ []
+
+
+Underfull \hbox (badness 8075) in paragraph at lines 191--192
+\T2A/Tempora-TLF/m/n/14.05249 (+20) SDK; ис^^?поль^^?зу^^?ет^^?ся
+ []
+
+
+Underfull \hbox (badness 3965) in paragraph at lines 191--192
+\T2A/Tempora-TLF/m/n/14.05249 (+20) для ком^^?пью^^?тер^^?но^^?го
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+[]|\T2A/cmtt/m/n/14.05249 AlPakh/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+\T2A/cmtt/m/n/14.05249 topotik-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Python
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Серверная
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+[]|\T2A/cmtt/m/n/14.05249 AlPakh/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\T2A/cmtt/m/n/14.05249 topotik-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) JavaScript
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Клиентская
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Vue-приложение с
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
+\T2A/Tempora-TLF/m/n/14.05249 (+20) марш^^?ру^^?ти^^?за^^?ци^^?ей,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
+[]|\T2A/cmtt/m/n/14.05249 Pacan4ik/
+ []
+
+
+Underfull \hbox (badness 2653) in paragraph at lines 202--202
+\T2A/Tempora-TLF/m/n/14.05249 (+20) ра^^?бот^^?ки тек^^?
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 202--203
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Базовая ре^^?а^^?ли^^?за^^?ция
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--205
+[]|\T2A/cmtt/m/n/14.05249 Ausland3r/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
+[]|\T2A/cmtt/m/n/14.05249 urlagushka/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--211
+[]|\T2A/cmtt/m/n/14.05249 Ausland3r/
+ []
+
+
+Overfull \hbox (10.63931pt too wide) in paragraph at lines 211--211
+[]|\T2A/Tempora-TLF/m/n/14.05249 (-20) Веб-приложение| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
+[]|\T2A/Tempora-TLF/m/n/14.05249 (+20) Фреймворк
+ []
+
+
+Overfull \hbox (11.18486pt too wide) in alignment at lines 179--215
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[50.50]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[51.51]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[52.52]
+<my_folder/images/first_page.png, id=747, 1278.7775pt x 475.27562pt>
 File: my_folder/images/first_page.png Graphic file (type png)
 <use my_folder/images/first_page.png>
-Package pdftex.def Info: my_folder/images/first_page.png  used on input line 26
-9.
+Package pdftex.def Info: my_folder/images/first_page.png  used on input line 25
+8.
 (pdftex.def)             Requested size: 483.69687pt x 179.77261pt.
-
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[47.47 <./my_folder/images/nagruzka.png>]
-<my_folder/images/second_page.png, id=638, 1284.29813pt x 611.28375pt>
+<my_folder/images/second_page.png, id=749, 1284.29813pt x 611.28375pt>
 File: my_folder/images/second_page.png Graphic file (type png)
 <use my_folder/images/second_page.png>
 Package pdftex.def Info: my_folder/images/second_page.png  used on input line 2
-77.
+66.
 (pdftex.def)             Requested size: 483.69687pt x 230.21954pt.
 
 
@@ -4808,18 +4775,18 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[48.48 <./my_folder/images/first_page.png>]
-<my_folder/images/third_page.png, id=646, 1284.8pt x 340.77313pt>
+[53.53 <./my_folder/images/first_page.png>]
+<my_folder/images/third_page.png, id=758, 1284.8pt x 340.77313pt>
 File: my_folder/images/third_page.png Graphic file (type png)
 <use my_folder/images/third_page.png>
-Package pdftex.def Info: my_folder/images/third_page.png  used on input line 28
-6.
+Package pdftex.def Info: my_folder/images/third_page.png  used on input line 27
+5.
 (pdftex.def)             Requested size: 483.69687pt x 128.29398pt.
-<my_folder/images/forth_page.png, id=647, 1284.8pt x 300.62312pt>
+<my_folder/images/forth_page.png, id=759, 1284.8pt x 300.62312pt>
 File: my_folder/images/forth_page.png Graphic file (type png)
 <use my_folder/images/forth_page.png>
-Package pdftex.def Info: my_folder/images/forth_page.png  used on input line 29
-2.
+Package pdftex.def Info: my_folder/images/forth_page.png  used on input line 28
+1.
 (pdftex.def)             Requested size: 483.69687pt x 113.17833pt.
 
 
@@ -4833,13 +4800,13 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[49.49 <./my_folder/images/second_page.png> <./my_folder/images/third_page.png>
+[54.54 <./my_folder/images/second_page.png> <./my_folder/images/third_page.png>
 ]
-<my_folder/images/fifth_page.png, id=659, 1284.8pt x 341.77687pt>
+<my_folder/images/fifth_page.png, id=770, 1284.8pt x 341.77687pt>
 File: my_folder/images/fifth_page.png Graphic file (type png)
 <use my_folder/images/fifth_page.png>
-Package pdftex.def Info: my_folder/images/fifth_page.png  used on input line 30
-8.
+Package pdftex.def Info: my_folder/images/fifth_page.png  used on input line 29
+7.
 (pdftex.def)             Requested size: 483.69687pt x 128.67188pt.
 
 
@@ -4853,11 +4820,11 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[50.50 <./my_folder/images/forth_page.png> <./my_folder/images/fifth_page.png>]
-<my_folder/images/capa_page.png, id=667, 1284.8pt x 352.31625pt>
+[55.55 <./my_folder/images/forth_page.png> <./my_folder/images/fifth_page.png>]
+<my_folder/images/capa_page.png, id=779, 1284.8pt x 352.31625pt>
 File: my_folder/images/capa_page.png Graphic file (type png)
 <use my_folder/images/capa_page.png>
-Package pdftex.def Info: my_folder/images/capa_page.png  used on input line 321
+Package pdftex.def Info: my_folder/images/capa_page.png  used on input line 310
 .
 (pdftex.def)             Requested size: 483.69687pt x 132.63972pt.
 
@@ -4872,135 +4839,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[51.51 <./my_folder/images/capa_page.png>]
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[52.52]
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[53.53]
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[54.54]
-Underfull \hbox (badness 10000) in paragraph at lines 446--446
-[]|\T2A/Tempora-TLF/m/n/12 (+20) 6aa0ac9,
- []
-
-
-Underfull \hbox (badness 1824) in paragraph at lines 446--446
-\T2A/Tempora-TLF/m/n/12 (+20) ний (на^^?при^^?мер, squash или fast-^^?
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 446--446
-[]|\T2A/Tempora-TLF/m/n/12 (+20) ca6655a,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 446--446
-[]|\T2A/Tempora-TLF/m/n/12 (+20) 6ad7d36,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 446--446
-[]|\T2A/Tempora-TLF/m/n/12 (+20) ca6655a,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 446--446
-[]|\T2A/Tempora-TLF/m/n/12 (+20) 6ad7d36,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 446--446
-[]|\T2A/Tempora-TLF/m/n/12 (+20) 4e5660e,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 446--446
-[]|\T2A/Tempora-TLF/m/n/12 (+20) 196baa7,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 446--446
-[]|\T2A/Tempora-TLF/m/n/12 (+20) 05caf51,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 446--446
-[]|\T2A/Tempora-TLF/m/n/12 (+20) 7404e85,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 446--446
-[]|\T2A/Tempora-TLF/m/n/12 (+20) 250fab4,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 446--446
-[]|\T2A/Tempora-TLF/m/n/12 (+20) 7b707df,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 446--446
-[]|\T2A/Tempora-TLF/m/n/12 (+20) Несоответствие фор^^?ма^^?ти^^?ро^^?ва^^?ния
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-)
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[55.55]
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[56.56] (./my_folder/conclusion.tex
+[56.56 <./my_folder/images/capa_page.png>]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -5037,6 +4876,74 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [59.59]
+Underfull \hbox (badness 10000) in paragraph at lines 435--435
+[]|\T2A/Tempora-TLF/m/n/12 (+20) 6aa0ac9,
+ []
+
+
+Underfull \hbox (badness 1824) in paragraph at lines 435--435
+\T2A/Tempora-TLF/m/n/12 (+20) ний (на^^?при^^?мер, squash или fast-^^?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--435
+[]|\T2A/Tempora-TLF/m/n/12 (+20) ca6655a,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--435
+[]|\T2A/Tempora-TLF/m/n/12 (+20) 6ad7d36,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--435
+[]|\T2A/Tempora-TLF/m/n/12 (+20) ca6655a,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--435
+[]|\T2A/Tempora-TLF/m/n/12 (+20) 6ad7d36,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--435
+[]|\T2A/Tempora-TLF/m/n/12 (+20) 4e5660e,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--435
+[]|\T2A/Tempora-TLF/m/n/12 (+20) 196baa7,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--435
+[]|\T2A/Tempora-TLF/m/n/12 (+20) 05caf51,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--435
+[]|\T2A/Tempora-TLF/m/n/12 (+20) 7404e85,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--435
+[]|\T2A/Tempora-TLF/m/n/12 (+20) 250fab4,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--435
+[]|\T2A/Tempora-TLF/m/n/12 (+20) 7b707df,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--435
+[]|\T2A/Tempora-TLF/m/n/12 (+20) Несоответствие фор^^?ма^^?ти^^?ро^^?ва^^?ния
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -5060,7 +4967,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[61.61]
+[61.61] (./my_folder/conclusion.tex
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -5084,7 +4991,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[63.63]
+[63.63]) (./my_folder/acronyms.tex) (./my_folder/dictionary.tex
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -5096,7 +5003,11 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[64.64]
+[64.64]) (./my_folder/references.tex
+
+LaTeX Warning: Empty bibliography on input line 1.
+
+
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -5109,6 +5020,8 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [65.65]
+bibitemlist
+
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -5121,6 +5034,27 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [66.66]
+Underfull \hbox (badness 10000) in paragraph at lines 63--65
+\T2A/Tempora-TLF/m/n/14.05249 (+20) fda . gov / inspections-[]compliance-[]enfo
+rcement-[]and-[]criminal-[]investigations /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--75
+\T2A/Tempora-TLF/m/n/14.05249 (+20) net / pro^^\le / Samesun-[]Singh / post / I
+ _ need _ a _ question _ depending _ on _ PICO _
+ []
+
+)
+
+Package xassoccnt Warning: Warning: An accidental(?) addition of associated
+(xassoccnt)                counter(s) without DeclareAssociatedCounters was
+(xassoccnt)                detected for
+(xassoccnt)                the driver counter "chapter" and following driven
+(xassoccnt)                counters:
+(xassoccnt)                --- myappendices ---
+
+
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -5132,7 +5066,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[67.67]
+[67.67] (./my_folder/appendix1.tex
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -5300,7 +5234,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[81.81]) (./my_folder/acronyms.tex) (./my_folder/dictionary.tex
+[81.81]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -5312,11 +5246,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[82.82]) (./my_folder/references.tex
-
-LaTeX Warning: Empty bibliography on input line 1.
-
-
+[82.82]
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -5329,8 +5259,6 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [83.83]
-bibitemlist
-
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -5343,27 +5271,6 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [84.84]
-Underfull \hbox (badness 10000) in paragraph at lines 63--65
-\T2A/Tempora-TLF/m/n/14.05249 (+20) fda . gov / inspections-[]compliance-[]enfo
-rcement-[]and-[]criminal-[]investigations /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--75
-\T2A/Tempora-TLF/m/n/14.05249 (+20) net / pro^^\le / Samesun-[]Singh / post / I
- _ need _ a _ question _ depending _ on _ PICO _
- []
-
-)
-
-Package xassoccnt Warning: Warning: An accidental(?) addition of associated
-(xassoccnt)                counter(s) without DeclareAssociatedCounters was
-(xassoccnt)                detected for
-(xassoccnt)                the driver counter "chapter" and following driven
-(xassoccnt)                counters:
-(xassoccnt)                --- myappendices ---
-
-
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -5375,7 +5282,115 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[85.85] (./my_folder/appendix1.tex) (./my_folder/appendix2.tex)
+[85.85]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[86.86]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[87.87]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[88.88]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[89.89]) (./my_folder/appendix2.tex
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[90.90]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[91.91]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[92.92]
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[93.93])
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[94.94]
 
 Class memoir Warning: The material used in the footer is too large
 (12.64719pt) for the given foot skip (0.0pt), it is recommended to
@@ -5393,37 +5408,41 @@ See the caption package documentation for explanation.
 
 Package nag Warning: 1 complaints in total.
 
+
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[95.95]
 \tf@toc=\write8
 \openout8 = `My_thesis.toc'.
 
-(./My_thesis.aux
+ (./My_thesis.aux
 Package cleveref Info: loaded `russian' language definitions on input line 12.
 )
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `My_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: AB4122D92FD9F9A51B2E74CAE3AF2CD2;4631.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                My_thesis
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: 337ECAC783F4AC9C667359B469932E63;5637.
 Package logreq Info: Writing requests to 'My_thesis.run.xml'.
 \openout1 = `My_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50220 strings out of 473330
- 872560 string characters out of 5723877
- 2429789 words of memory out of 5000000
- 70915 multiletter control sequences out of 15000+600000
- 659785 words of font info for 264 fonts, out of 8000000 for 9000
+ 50076 strings out of 473330
+ 869514 string characters out of 5723877
+ 2435726 words of memory out of 5000000
+ 70704 multiletter control sequences out of 15000+600000
+ 658816 words of font info for 260 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,19n,123p,3531b,3221s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><c:/texlive/
@@ -5436,10 +5455,10 @@ onts/type1/public/cm-super/sfit1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1
 -super/sftt1440.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/newtx/txmiaX
 .pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/newtx/txsym.pfb><c:/texlive
 /2024/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on My_thesis.pdf (85 pages, 2430140 bytes).
+Output written on My_thesis.pdf (95 pages, 2449229 bytes).
 PDF statistics:
- 2103 PDF objects out of 2487 (max. 8388607)
- 1949 compressed objects within 20 object streams
- 1320 named destinations out of 1440 (max. 500000)
- 48807 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 2260 PDF objects out of 2487 (max. 8388607)
+ 2094 compressed objects within 21 object streams
+ 1386 named destinations out of 1440 (max. 500000)
+ 48823 words of extra memory for PDF output out of 51595 (max. 10000000)
 
